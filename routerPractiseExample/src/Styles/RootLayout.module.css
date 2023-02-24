@@ -1,0 +1,137 @@
+
+
+
+*{
+
+    overflow-x: hidden;
+    background-color: #616a73;
+    
+    
+}
+
+
+body{
+
+    overflow-x: hidden;
+    
+}
+
+
+.navbarContainer{
+    
+    
+    height: 105px; 
+    background-color: whitesmoke;
+    
+    position: fixed; 
+    
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 10; 
+    
+    /* Add in the font family here  */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+
+
+.navList{
+
+padding-left: 30%; 
+
+
+}
+
+/* Use this to center the list container here  */
+.flexListContainer{
+
+height: 105px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+
+/* Style the flex container here  */
+.listContainer{
+
+    width: 70%; 
+  
+    height: auto;
+    
+}
+
+.spanSlash{
+
+    padding-left: 10px;
+    color: #616a73; 
+    opacity: 0.1;  
+    
+}
+
+
+
+
+
+.listItem{
+
+    display: inline;
+    padding-right: 1.5%; 
+
+}
+#picture{
+
+    margin-bottom: 9rem;
+    
+
+}
+
+
+#item{
+
+    cursor: pointer;
+    
+}
+
+/* Add in the hover effects here  */
+
+/* For some reason this is not working  */
+#item:hover > #navlink{
+    
+    transform: scale(1.001);    
+    color: rgba(4, 5, 5, 0.9);
+
+    
+}
+
+.navbarContainer{
+    
+    margin-bottom: 10%; 
+    
+    
+}
+
+.cards{
+
+
+}
+
+/* Add in the media queries here  */
+
+@media (max-width: 900px){
+
+    .flexListContainer{
+    
+    
+        display: none;
+        
+    }
+}
+
+
