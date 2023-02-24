@@ -79,12 +79,7 @@ export default function RootLayout() {
       <main>
         <Outlet />  
         
-        {/* Add in the Hero Image here  */}
-        {/* Why is this not showing up  */}
-        {/* <Picture id={RootLayoutCSS.picture} /> */}
         
-        {/* Add in the Cards here  */}
-        {/* Why is this not showing up either  */}
         <Cards className={RootLayoutCSS.cards}/>
          
         <Footer className={RootLayoutCSS.footer} />
