@@ -1,0 +1,327 @@
+
+/* Import the font family here  */
+
+:root{
+
+    /* Add in your variables here  */
+    
+    /* 
+    
+    CSS One Liners 
+    
+    DON'T REMOVE THESE!!!!
+    
+    scroll-snap-align: x manadatory; 
+    
+    
+    
+    
+    .scrollItem{
+        
+        scroll-snap-align: center; 
+    
+    }
+    
+    To resize items you need: 
+    
+    overflow: auto; 
+    resize: both; 
+    
+    
+    
+    
+    To add color to text only. 
+    
+    Add a linear gradient to the text container 
+    
+    Then add
+    --webkit-background-clip: text; 
+    This clips the background gradient To the text 
+    
+    
+    Then we make the text transparent 
+    
+    -webkit-text-fill-color: transparent; 
+    
+  
+    To stop things from being Selected use: 
+    
+    pointer-events: none; 
+    
+    
+    
+    
+    
+    
+    */
+    
+}
+
+*{
+padding:0; 
+margin: 0; 
+box-sizing: border-box;
+
+}
+
+
+body{
+
+
+
+    width: 100vw;
+    overflow: scroll;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+    
+}
+
+
+
+.contentContainer{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-content: center;
+    
+    background-color: blue; 
+    
+}
+
+.headlineContainer{
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+    
+}
+
+.listContainer{
+    
+    background-color: white; 
+
+}
+
+ ul {
+
+    list-style: none;
+    text-align: center;
+    text-decoration: none; 
+    color: black;
+    
+
+}
+li{
+
+   padding-top: 1rem; 
+   color: black; 
+   text-decoration: none;
+   
+}
+
+a{
+    color: black; 
+    text-decoration: none;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 300ms;
+    
+}
+
+
+/* Find out why this is not working  */
+.socialMediaListItem li {
+
+    display: inline; 
+    
+}
+
+
+.socialMediaList li {
+
+    float: left; 
+    overflow: hidden;
+    
+
+}
+
+.socialMediaSection{
+
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 2.6%; 
+        
+        
+}
+
+
+.socialMediaList{
+    
+    display: inline;
+    
+    }
+    
+    
+    
+    .hoverEffectParentContainer{
+    
+
+        width: 9rem; 
+        height: 5.2rem;
+        
+    }
+    
+   
+
+    .hoverEffectContainer{
+    
+       width: 100%; 
+       height: 100%; 
+       
+        padding-left: 5%; 
+        padding-right: 5%; 
+        
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+.socialMediaLink{
+
+        width: 2rem; 
+        height: 2rem; 
+        margin-right: 1rem; 
+        margin-top: 1rem; 
+        color: black    
+        
+        
+}
+
+.socialMediaLink{
+
+  
+    margin-top: 1rem; 
+    width: 2rem; 
+    height: 2rem; 
+    color: black;
+    
+}
+
+.socialMediaLink:hover{
+
+   opacity: 1 !important;  
+   color: black !important;
+   transform: scale(1.07);
+   transform: translateY(2deg);
+   
+}
+    
+    
+    
+    
+    #contactListItem:hover > #anchorTag{
+        
+        color: black;
+    }
+    
+    #anchorTag:hover{
+        color: black; 
+    }
+    
+    #contactListItem:hover{
+    
+        color: black;
+
+    }
+    
+    #strongTag:hover{
+        
+        color: black;
+        
+        
+    }
+    
+
+    
+    
+    #routerLink:hover{
+        
+        color: black;
+        
+
+    }
+    
+    @media (max-width: 1290px){
+        .contentContainer{
+            
+            margin: 0 10%; 
+            
+            
+        }
+    }
+    
+    @media (max-width: 1100px){
+     .contentContainer{
+        
+        
+        display: flex;
+        justify-items: space-around;
+        margin: 0 auto; 
+        width: auto; 
+        
+        
+        
+     }   
+        
+        .list{
+            
+            margin-right: 16vw; 
+            
+        }
+        
+        
+    }
+    
+    @media (max-width: 950px){
+        .list{
+            margin-right: 10vw; 
+            
+        }
+        
+    }
+
+
+@media (max-width: 780px){
+    
+    .contentContainer{
+        display: grid;
+        
+         gap: 2rem; 
+        grid-template-columns: repeat(1, 1fr);
+        overflow: scroll;
+        grid-template-rows: repeat(3, 2fr, 1fr, 2fr);
+        
+    }
+    
+
+    .contentContainer{
+    
+        padding-bottom: 3%; 
+        
+    }
+    
+    .socialMediaSection{
+    
+        margin-bottom: 6.9%; 
+
+    }
+    .list{
+    
+        margin: 0; 
+        
+    }
+}
