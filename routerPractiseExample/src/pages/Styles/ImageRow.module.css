@@ -1,0 +1,226 @@
+
+
+*, *::after, *::before{
+    
+    padding: 0; 
+    margin: 0; 
+    
+    box-sizing: border-box;
+    
+}
+
+:root{
+
+    
+    
+}
+
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+
+body{
+    
+
+    width: 100vw; 
+    min-height: 100vh;
+    position: relative; 
+    
+    padding: 0px; 
+    margin: 0px; 
+    
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    background-color: #444;
+    color: #938484; 
+    
+}
+
+
+.positionalContainer{
+
+    width: 100vw; 
+    min-height: 100vh;
+    position: relative;
+    display: grid; 
+    justify-content: center;
+    align-content: center;
+    
+    
+}
+
+
+.mainContainer{
+    
+    
+    width: clamp(10rem, 99vw + 1rem, 99rem); 
+    min-height: 40vh;
+    
+    
+    overflow: hidden;
+    margin: 0 auto; 
+    padding: 0 clamp(1rem, 2vw + 1rem, 5rem);
+
+    background-color: antiquewhite;
+    
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));   
+    
+    gap: 2rem; 
+
+    
+}
+
+    .imageOne{
+
+    background-image: url("https://images.unsplash.com/photo-1678614033804-6e1b6580c8a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    min-height: 50vh;
+    
+    
+    display: grid;
+    place-content: center;
+    
+}
+.imageTwo{
+
+    background-image: url("https://images.unsplash.com/photo-1678730505377-7b21cabb6485?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    min-height: 50vh;
+    display: grid;
+    place-content: center;
+    
+}
+
+
+
+.paragraphContainer{
+
+    display: grid;
+    justify-content: center;
+    
+    width: auto; 
+    margin: 0 auto; 
+    
+}
+
+
+@media (max-width: 1200px){
+    .paragraphContainer{
+        margin-left: 11.7%; 
+    }
+    
+    
+}
+
+@media(max-width: 1000px){
+
+    .paragraphContainer{
+    
+        margin-left: 7%; 
+        
+    }
+    
+}
+
+@media (max-width: 800px){
+    .paragraphContainer{
+        margin-left: 9%; 
+        
+        
+    }
+    
+}
+
+
+@media(max-width: 810px){
+    .paragraphContainer{
+        margin-left: 13%; 
+        
+        
+    }
+    
+}
+
+
+
+
+/* Add in the media queries here  */
+@media (max-width: 700px){
+
+/* Select the main container here  */
+.mainContainer{
+    
+    grid-template-columns: 1fr;
+    background-color: black; 
+    width: clamp(12rem, 90vw + 1rem, 99rem); 
+    margin: 0 auto; 
+    place-content: center;
+}    
+
+
+/* Select the image container here  */
+
+.imageOne{
+
+    
+}
+.imageOne{
+    
+    
+}
+
+/* Select the text container here  */
+
+.paragraphContainer{
+    
+    
+}
+
+.ImageRowParagraph{
+    
+    width: auto; 
+    margin: 0 auto; 
+    
+    
+    
+    
+}
+
+
+
+
+    
+}
+
+
+/* Add in the container queries here  */
+
+
+/* Add in the effects here  */
+
+
+/* Add in the Animations here  */
+
+
+
+
+
+
+
+
+
+
+
+
+

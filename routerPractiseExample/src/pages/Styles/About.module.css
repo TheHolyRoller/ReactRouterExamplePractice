@@ -1,0 +1,83 @@
+
+
+body{
+
+    min-height: 100vh;
+    min-width: 100vw; 
+    
+}
+
+
+
+.imageSlider{
+
+
+
+    z-index: 3000;
+    position: relative; 
+
+}
+
+
+.imageSliderContainer{
+
+    /* background-color: orange; */
+    height: 35vmax;
+    width: 80vw; 
+    overflow: hidden;
+    
+    /* margin-top: 6rem;  */
+
+}
+
+.mainSlideContainer{
+
+    min-width: 100vw;
+    width: 100vw; 
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    
+    background-color: black;
+    
+    margin-top: 55vmin; 
+    
+    
+}
+#button{
+    
+    /* background-color: black; */
+    /* min-height: 100vh;
+    min-width: 100vw; */
+    position: absolute;
+    left: 25%; 
+    right:0  ; 
+    
+
+}
+
+#paragraph{
+    
+
+}
+
+#slider{
+
+    min-height: 35vmin;
+    width: 100vmax; 
+    margin-top: 10rem; 
+    
+}
+
+
+
+/* Add in the media queries here  */
+@media (max-width: 900px) {
+    #paragraphContainerID{
+    
+        padding-top: 7vmin; 
+        padding-bottom: 14vmin;
+    
+    }
+}

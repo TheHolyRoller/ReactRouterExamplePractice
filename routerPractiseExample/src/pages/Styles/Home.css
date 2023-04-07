@@ -1,0 +1,128 @@
+
+/* Add in the global selector here  */
+*{
+
+    --lightPrimary: #f5f5f5; 
+    --text: #121212; 
+    --secondaryText: #757575; 
+    --accentColor: #607D8B; 
+    --dividerColor: #BDBDBD;
+
+    padding: 0; 
+    margin: 0; 
+        /* background-color: var(--lightPrimary); */
+        color: var(--text); 
+    
+}
+
+body{
+
+
+    min-height: 100vh; 
+    min-width: 100vw;
+    
+
+    box-sizing: border-box;
+    overflow-x: scroll !important;
+    display: grid;
+    justify-content: center;
+    overflow-x: hidden !important;
+
+}
+
+.home{
+    
+    /* position: relative; */
+    /* display: grid; */
+    /* justify-content: center; */
+
+}
+
+.homeImageContainer{
+
+
+background-color: white;
+
+/* Add in the responsive image dimensions here  */
+width: clamp(100rem, 100vw + 1rem, 50rem); 
+min-height: 75vh; 
+
+z-index: 4;
+
+position: relative;
+display: grid;
+justify-content: center;
+align-content: center; 
+
+
+/* Add in the background image here  */
+background-image: url("https://images.unsplash.com/photo-1679468971189-fda1a22061d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60");
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat;
+
+
+}
+.homeLineContainer{
+    
+}
+
+.homeLine{
+    
+    
+}
+
+.homeImageText{
+    
+    /* position: absolute;  */
+    color: rgb(194, 188, 188); 
+    background-color: rgba(444, 444, 444, 0.00001); 
+    width: 50vw; 
+    z-index: 1000 !important; 
+    
+}
+
+/* Add in the paragraph Container here  */
+.homeParagraphContainer{
+
+    
+    /* width: 60vw;  */
+    padding: 3rem; 
+    display: grid;
+    justify-content: center;
+}
+
+.homeParagraph{
+
+    padding: 0 5%; 
+
+}
+
+.homeCardsPositionalContainer{
+
+min-width: 100vw; 
+/* background-color: black;  */
+display: flex; 
+justify-items: center;
+/* margin-left: calc(1vw + 1.1%); */
+    
+}
+
+
+.homeCardsContainer{
+    
+    width: 100vw; 
+   
+    display: flex; 
+    justify-items: center; 
+    /* outline: 10px solid purple;  */
+    
+    
+   /* background-color: blue;  */
+   margin: 0 auto; 
+    
+}
+
+
+
+

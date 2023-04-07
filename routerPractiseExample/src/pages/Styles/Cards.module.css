@@ -1,0 +1,500 @@
+
+
+*{
+
+    /* padding: 0; 
+    margin: 0;  */
+    box-sizing: border-box;
+
+    }
+    
+    
+    
+    body{
+    
+    min-height: 100vh;;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    }
+    
+    .container{
+    
+    width: 100vw;
+    min-height: 60vmax;
+    /* max-height: 40vmax; */
+    
+    
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr)); 
+
+    justify-content: center;
+    justify-items: center; 
+    overflow: hidden;
+    gap: 2rem; 
+    
+ 
+    overflow: hidden;
+    
+    
+    
+    
+    }
+    
+    .cardContainer{
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        overflow: hidden;
+        
+        /* outline: 10px solid red;  */
+        transition: ease-in-out 300ms;
+    
+    }
+    
+    .cardContainer:hover{
+    
+        transform: scale(1.01);
+        transform: translateY(1.5deg);
+    }
+    
+    .card{
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 10%;
+    color: grey; 
+
+    min-height: 34rem;
+    
+    }
+    
+    
+    
+    .title{
+    
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
+    padding-bottom: .5rem;
+    
+    }
+    
+    
+    
+    .button{
+        
+        /* outline: 4px solid white !important;  */
+        display: flex; 
+        justify-content: center; 
+        width: 100%; 
+        
+    }
+    
+    
+    
+    .paragraph{
+    
+        border-radius: 5%; 
+        padding: 2% 5%; 
+        margin-top: 6%; 
+        
+        width: 21rem; 
+        min-width: 11rem;
+        
+    }
+    
+    
+    /* Add in the ruleset for the Youtube Video container here  */
+    
+    .youtubeVideoContainer{
+    
+        background-color: black;
+        width: 50vw; 
+        heigth: 30vh; 
+        
+        
+    }
+    
+    
+    
+    /* This needs a lot of style and positioning changes  */
+    .googleDirectionsContainer{
+    
+        width: 19rem; 
+        height: 14rem; 
+        background-color: black;
+        margin-top: 7rem; 
+        
+
+    }
+    
+    /* Add in the rule set for the image containers and the image  */
+    .mainImageContainer{
+        
+        /* outline: 7px solid brown;  */
+        
+        /* Sync up the width of this container with the image container  */
+        width: 21rem; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+   
+
+
+    }
+    
+    .imageContainer{
+        
+        width: 21rem; 
+        background-image: url('../assets/Kitten.jpg');
+        object-fit: cover;
+        background-size: cover;
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        /* height: auto; */
+        height: 49vh; 
+        
+        overflow: hidden;
+        
+        
+        
+        
+    
+    }
+    
+    
+    .imageTag img{
+    
+        max-width: 100%;
+        width: 100%; 
+        
+    }
+    
+    
+    
+    /* Add in the media query for the outsized  */
+    @media(max-width: 1100px){
+    
+    
+        .imageTag{
+            
+
+
+            
+        
+
+        }
+        
+        
+        .imageContainer{
+        
+            width: 37vw; 
+            
+
+        }
+    
+
+    }
+    
+    
+    
+    
+    /* Add in the image tag here  */
+    
+        @media (max-width: 1151px){
+            
+            
+            .mainImageContainer{
+            
+                width: 29vw; 
+                /* overflow: hidden; */
+                
+                
+            }
+            
+            .imageContainer{
+            
+                width: 29vw;
+                
+                /* outline: 12px solid limegreen;  */
+                /* overflow: hidden; */
+                
+                
+        
+            }
+            
+            /* Find out what container this is  */
+            
+            /* This container does not appear within the JSX  */
+            .container{
+            
+                padding-bottom: 1rem;
+            }
+            
+            .paragraph{
+                width: 23vw; 
+                
+            }
+        }
+        
+        
+        
+        /* Reset the width setting here  */
+        @media (max-width: 871px){
+            
+            
+            
+            .mainImageContainer{
+            
+            
+                width: 23vw; 
+                
+            }
+            
+            .imageContainer{
+                
+              
+                width: 21vw; 
+                
+                
+                
+            }
+            
+            .imageTag{
+            
+
+            }
+            
+            .paragraph{
+                
+                width: 20.3rem; 
+            }
+            
+        }
+        
+        /* Add in the media query here for the 868 - 825pixel range  */
+        @media (max-width: 868px){
+            
+            .mainImageContainer{
+            
+            
+                width: 23vw; 
+                
+            }
+            
+            .imageContainer{
+                
+              
+                width: 21vw; 
+                
+                
+                
+            }
+            
+            .paragraph{
+            
+                width: 15rem; 
+            
+            }
+            
+            .imageTag{
+            
+                min-width: 100%; 
+                width: 100%; 
+                
+            }
+        }
+    
+    
+        @media (max-width: 850px){
+        
+        /* Find out why this is not working  */
+        .container{
+            
+            grid-template-columns: repeat(1, minmax(auto, 1fr)) !important;
+            
+        }
+        
+        .mainImageContainer{
+        
+            max-width: 31vw;
+            min-width: 31vw; 
+            width: 31vw; 
+            
+            
+        }
+        
+        .imageContainer{
+        
+            max-width: 31vw;
+            min-width: 31vw; 
+            width: 31vw;             
+            
+        }
+        
+        .imageTag{
+        
+            max-width: 31vw;
+            min-width: 31vw; 
+            width: 31vw; 
+        }
+        
+        
+        
+        /* Add in the rulesets for the paragarph and image container here  */
+        
+        .paragraph{
+        
+        width: 30vw;
+        
+        
+
+        }
+        
+     
+        
+        
+        /* This is probably what is causing the limitation on the image size  */
+        .card{
+        
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .button{
+        
+            margin-top: 3rem;
+        }
+        
+        /* Reset the clamping for the Image and Paragraph rulesets here  */
+        
+       
+    }
+    
+    
+    
+    /* Add in the media query here for the reseting of the dimensions for the Card Image   */
+    
+    @media (max-width: 850px){
+    
+    
+    /* Select the image containers here  */
+    .mainImageContainer{
+    
+    
+    /* Reduce the width here and see if it makes a difference  */
+    min-width: 69vw; 
+    max-width: 69vw; 
+    
+    
+    }
+    
+    
+    .imageContainer{
+    
+    min-width: 100%; 
+    
+    
+    
+    
+    }
+    
+        .imageTag{
+        
+            /* Add in the max width and height here  */
+            /* Add in the equivalent of fixed units to increase the size of the image within reduced screen widths  */
+            min-width: 69vw;    
+            max-width: 69vw;
+            padding: 0; 
+            margin: 0; 
+            
+            
+            /* Add in a min and max height here  */
+            min-height: 50vh;
+            max-height: 50vh;
+            
+            
+
+        }
+        
+        
+        /* Sync up the paragraph width with the image width here  */
+        
+        .paragraph{
+        
+            width: 69vw; 
+            
+
+        }
+
+    }
+    
+    
+    
+    /* Add in a media query here to syn up the paragraph width with the image width  */
+    @media (max-width: 650px) {
+        .paragraph{
+        
+        /* Make sure the paragraph is the same width as the image  */
+        
+
+        }
+        
+        
+        .mainImageContainer{
+            
+            
+        
+
+        }
+        
+        
+        .imageContainer{
+        
+        
+        }
+        
+        
+        .imageTag{
+        
+        
+
+        }
+    }
+    
+    @media (max-width: 800px){
+        
+        .imageContainer{
+            
+            max-width: 27vw; 
+            
+
+        }
+        .mainImageContainer{
+        
+            max-width: 27vw; 
+        
+
+        }
+        
+        .imageTag{
+            
+            max-width: 27vw; 
+            
+
+        }
+
+    }
+    
+    
+    
+    
+    
+    

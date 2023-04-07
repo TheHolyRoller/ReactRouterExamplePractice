@@ -1,0 +1,196 @@
+
+
+/* 
+
+
+
+
+*/
+
+*, *::after, *::before{
+    
+    padding: 0; 
+    margin: 0; 
+    
+    box-sizing: border-box;
+    
+    
+    /* Add in the outline and background color here  */
+    
+    
+    
+}
+
+
+
+body{
+
+width: 100vw; 
+min-height: 100vh;  
+position: relative; 
+
+padding: 0px; 
+margin: 0px; 
+
+background-color: #444; 
+
+
+display: grid;
+justify-content: center;
+
+
+overflow-x: hidden;
+overflow-y: scroll;
+
+    
+}
+
+html{
+
+  scroll-behavior: smooth;  
+    
+}
+
+:root{
+
+    /* Add in the root variables here  */
+    
+}
+
+
+/* Add in the main container here  */
+.mainContainer{
+
+    display: flex;
+    justify-items: center;
+    
+    
+    
+}
+
+.rowContainer{
+    
+    display: grid;  
+    grid-template-columns: 1fr 1fr; 
+    
+    /* width: 72vw;  */
+    width: clamp(12rem, 72vw + 1rem, 99rem); 
+    
+    margin: 0 auto; 
+    background-color: blue; 
+    
+}
+
+.image{
+    
+    background-image: url("https://images.unsplash.com/photo-1677585437612-ec2f19ac5439?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+        
+      min-height: 62vh;
+      /* width: 30vw;  */
+      width: clamp(12rem, 35vw + 1rem, 33rem); 
+      position: relative; 
+      z-index: 10;  
+      border-radius: 5%;
+      /* margin-left: 9%;  */
+      
+    
+}
+
+
+.header{
+
+    margin-bottom: 2rem; 
+    
+}
+
+.buttonContainer{
+
+    width: 100%; 
+    
+    margin-top: 1rem; 
+    margin-left: 1rem; 
+    
+}
+
+
+/* Add in the media queries here  */
+@media (max-width: 1000px){
+
+    .rowContainer{
+        
+      
+         grid-template-columns: 1fr;
+         width: clamp(13rem, 90vw + 1rem, 44rem); 
+         margin-top: 0.5rem; 
+         
+        
+    }
+    
+    /* Try and fix the image and spacing issues here  */
+    .image{
+        min-width: 100%; 
+        
+    }
+    .buttonContainer{
+        
+        min-width: 100%; 
+        background-color: blanchedalmond; 
+        margin: 0 auto; 
+        display: grid;
+        /* justify-content: center; */
+        
+        
+    }
+    
+    .button{
+        /* width: auto; 
+        margin: 0 auto;  */
+        width: 50%; 
+        margin-left: 3.5%; 
+        margin-bottom: 1rem; 
+        margin-top: 0.5rem; 
+        
+    }
+    
+        
+    .headerContainer{
+
+        padding-top: 1.5rem; 
+        
+    }
+    
+    .textSection{
+        
+        
+        
+    }
+    
+    
+    .text{
+        
+        padding: 0 1rem; 
+        padding-bottom: 0.5rem; 
+    }
+    
+}
+
+
+/* Add in the container queries here  */
+
+
+
+/* Add in the Effects here  */
+
+
+/* Add in the animations here  */
+
+
+
+
+
+
+

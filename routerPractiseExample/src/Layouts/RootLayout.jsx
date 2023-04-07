@@ -2,29 +2,34 @@
 
 
 import { Outlet, NavLink, ScrollRestoration } from "react-router-dom"
-import Breadcrumbs from "../components/Breadcrumbs";
-// Import the Landing Page here 
-// import LandingPage from '../pages/help/LandingPage'; 
+import { Link } from 'react-router-dom'; 
 
-// This could break things 
 
-import Footer from '../pages/Footer'; 
-import ImageSlider from "../pages/ImageSlider";
-// Import the style sheet here 
-import RootLayoutCSS from  '../Styles/RootLayout.module.css'; 
+// import Footer from '../pages/Footer'; 
 
-// Import all the files here for the Navbar 
+
+
+
+
 
 import '../pages/Ministry'; 
 import '../pages/KidsMinistry'; 
 import '../pages/Volunteering'; 
-import '../pages/NewHamburger';
-import Cards from '../pages/Cards'; 
-import NewHamburger from "../pages/NewHamburger";
-// import Sunset from '../assets/Sunset'; 
-import Picture from "../pages/Picture";
+// import Cards from '../pages/Cards'; 
+// import Picture from "../pages/Picture";
+// import Paragraph from "../pages/Paragraph";
+// import Home from '../pages/Home';
+import Home from '../pages/Home'; 
+// import About from '../pages/About'; 
+
+// import Give from '../pages/Give'; 
+// import Ministry from "../pages/Ministry";
+// import Meetings from "../pages/Meetings";
+// import Volunteering from "../pages/Volunteering";
 
 
+// import HamburgerNav from "../pages/HamburgerNav";
+import HamburgerNav from '../pages/Navigation/HamburgerNav'; 
 
 
 export default function RootLayout() {
@@ -37,53 +42,25 @@ export default function RootLayout() {
     {url: 'https://images.pexels.com/photos/208701/pexels-photo-208701.jpeg?auto=compress&cs=tinysrgb&w=600', title: 'Italy' },
     
     ];
-  
+    
+    
+    
+    const goHome = () => {
+    
+    return <Navigate to="/" replace={true}  />
+      
+    }
 
   return (
-    <div className="root-layout">
-      <ScrollRestoration />
-      <header className={RootLayoutCSS.navbarContainer}>
       
-        <nav className={RootLayoutCSS.navbar}>
-         
-          <div className={RootLayoutCSS.flexListContainer}>
-          <div className={RootLayoutCSS.listContainer}>
-          <ul className={RootLayoutCSS.navList}>
-          <li id={RootLayoutCSS.item} className={RootLayoutCSS.listItem}>
-          <NavLink id={RootLayoutCSS.navlink} to="help">Help</NavLink><span className={RootLayoutCSS.spanSlash}>/</span>
-          </li>
-          <li id={RootLayoutCSS.item} className={RootLayoutCSS.listItem}>
-          <NavLink id={RootLayoutCSS.navlink} to="about">About </NavLink><span className={RootLayoutCSS.spanSlash}>/</span>
-          </li>   
-          <li id={RootLayoutCSS.item} className={RootLayoutCSS.listItem}>
-          <NavLink id={RootLayoutCSS.navlink} to="careers">Careers</NavLink><span className={RootLayoutCSS.spanSlash}>/</span>
-          </li>
-          <li id={RootLayoutCSS.item} className={RootLayoutCSS.listItem}>
-          <NavLink id={RootLayoutCSS.navlink} to="cards">Cards  </NavLink><span className={RootLayoutCSS.spanSlash}>/</span>
-          </li>
-          <li id={RootLayoutCSS.item} className={RootLayoutCSS.listItem}>
-          <NavLink id={RootLayoutCSS.navlink} to="info">Info</NavLink>
-          </li>
-          </ul>
-          </div>
-          </div>
-          
-         
-          <div className={RootLayoutCSS.hamburgerMenuContainer}>
-           <NewHamburger className={RootLayoutCSS.hamburgerMenu}/>
-          </div>
-          
-        </nav>
-        <Breadcrumbs />
-      </header> 
-      <main>
-        <Outlet />  
-        
-        
-        <Cards className={RootLayoutCSS.cards}/>
-         
-        <Footer className={RootLayoutCSS.footer} />
-      </main>
+      <div className="root-layout">
+      
+      
+      
+      {/* Add in the HamburgerNav here  */}
+      <ScrollRestoration/>
+      <HamburgerNav/>
+      
     </div>
   );
 }

@@ -3,19 +3,24 @@ import { Navigate, Outlet, useSearchParams } from "react-router-dom";
 
 // Import the pages here 
 // import ImageSlider from "./ImageSlider";
-import ImageSlider from './ImageSlider.jsx'; 
-import AboutCSS from '../Styles/About.module.css'; 
+// import ImageSlider from './ImageSlider.jsx'; 
+// import AboutCSS from '../Styles/About.module.css'; 
+// import Paragraph from "./Paragraph.jsx";
+
+
+import AboutCSS from '../pages/Styles/About.module.css'; 
 
 
 export default function About() {
 
 
+// Figure out why these are not working 
   const slides = [ 
-    {url: 'https://images.pexels.com/photos/4491315/pexels-photo-4491315.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load', title: 'Beach' },
-    {url: 'https://images.pexels.com/photos/4458003/pexels-photo-4458003.jpeg?auto=compress&cs=tinysrgb&w=600', title: 'Boat' },
-    {url: 'https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?auto=compress&cs=tinysrgb&w=600', title: 'Forest' },
-    {url: 'https://images.pexels.com/photos/427679/pexels-photo-427679.jpeg?auto=compress&cs=tinysrgb&w=600', title: 'City' },
-    {url: 'https://images.pexels.com/photos/208701/pexels-photo-208701.jpeg?auto=compress&cs=tinysrgb&w=600', title: 'Italy' },
+    {url: 'https://images.unsplash.com/photo-1563187867-2cd158d07999?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Qm9hdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60', title: 'Beach' },
+    {url: 'https://images.unsplash.com/photo-1510525009512-ad7fc13eefab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Ym9hdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60', title: 'Boat' },
+    {url: 'https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Rm9yZXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60', title: 'Forest' },
+    {url: 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8TG9uZG9uJTIwY2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60', title: 'City' },
+    {url: 'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8SXRhbHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60', title: 'Italy' },
     
     ];
     
@@ -27,9 +32,7 @@ export default function About() {
       margin: '0 auto'
       
       
-  
     }
-
 
 
   const [user, setUser] = useState('mario')
@@ -46,22 +49,14 @@ export default function About() {
   return (
     <div className="about">
       {name && <p>Hi, {name}!</p>}
-
+    
       <h2>About Us</h2>
-      <div id={AboutCSS.paragraphContainerID} className={AboutCSS.paragraphContainer}>
-      <p id={AboutCSS.paragraphSection}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui provident consequuntur vel omnis quisquam rem harum, maxime expedita, ullam ut dolore! Distinctio eos minima voluptatum totam id hic! Sapiente debitis quia illum officia obcaecati provident nulla odio molestiae suscipit quasi.</p>
-      <p id={AboutCSS.paragraphSection}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui provident consequuntur vel omnis quisquam rem harum, maxime expedita, ullam ut dolore! Distinctio eos minima voluptatum totam id hic! Sapiente debitis quia illum officia obcaecati provident nulla odio molestiae suscipit quasi.</p>
-      <p id={AboutCSS.paragraphSection}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui provident consequuntur vel omnis quisquam rem harum, maxime expedita, ullam ut dolore! Distinctio eos minima voluptatum totam id hic! Sapiente debitis quia illum officia obcaecati provident nulla odio molestiae suscipit quasi.</p>
-      </div>
-      <div className={AboutCSS.containerStyles}>
-      {/* <Outlet/> */}
-      <div className={AboutCSS.mainSlideContainer}>
-      <div className={AboutCSS.imageSliderContainer}>
-      <ImageSlider className={AboutCSS.imageSlider} slides={slides} />
-      </div>
-      </div>
-      </div>
-      <button onClick={() => setUser(null)}>Logout</button>
+      
+      
+      <button id={AboutCSS.button} onClick={() => setUser(null)}>Logout</button>
+      
+
+      
     </div>
   );
 }

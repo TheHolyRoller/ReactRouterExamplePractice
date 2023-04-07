@@ -1,0 +1,281 @@
+*, *::before, *::after{
+    
+padding: 0; 
+margin: 0; 
+box-sizing: border-box;
+
+
+    
+    
+    
+    
+}
+
+html{
+    
+    scroll-behavior: smooth;
+    
+    
+    
+}
+
+:root{
+
+/* Add in the root variables here  */
+
+    
+}
+
+
+body{
+
+   padding: 0px; 
+   margin: 0px; 
+   
+   background-color: #444;
+   
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
+   width: 100vw; 
+   min-height: 100vh;
+   position: relative; 
+   
+   
+   /* Add in the display type here  */
+    display: grid;
+    
+}
+
+
+.mainContainer{
+    
+    display: grid;
+    grid-template-areas:  
+                          "hero hero hero"
+                           "hero hero hero"
+                           "hero hero hero" 
+                           "hero hero hero"
+                           "hero hero hero"
+                            "slider slider slider" 
+                            "slider slider slider"
+                            "slider slider slider"
+                            "slider slider slider"
+                             "imageRow imageRow imageRow"
+                             "imageRow imageRow imageRow"
+                             "imageRow imageRow imageRow"
+                             "cards cards cards"
+                             "cards cards cards"
+                             "cards cards cards"
+                             "cards cards cards"
+                             "imageText imageText imageText"
+                             "imageText imageText imageText"
+                             "imageText imageText imageText"
+                             "imageText imageText imageText"
+                             "imageText imageText imageText"
+                             "textImage textImage textImage"
+                             "textImage textImage textImage"
+                             "textImage textImage textImage"
+                             "textImage textImage textImage"
+                             "textImage textImage textImage"
+                             "footer footer footer"
+                             "footer footer footer"
+                             "footer footer footer"
+                             "footer footer footer";
+                             
+    
+    
+}
+
+.holder{
+    grid-area: nav;
+    
+}
+
+
+
+
+.heroImage{
+
+    background-image: url("https://images.unsplash.com/photo-1680213253044-ee5962a18306?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60");
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    
+    position: relative; 
+    margin: 0 auto; 
+    
+    
+}
+
+.imageContainer{
+    
+    position: relative; 
+    grid-area: hero;
+    
+    
+    
+}
+
+
+.imageTextContainer{
+
+    position: absolute; 
+    
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    
+    
+}
+
+
+/* -----------PAGE CONTENT SECTION ------------- */
+
+
+.textContainer{
+    
+    background-color: white; 
+    /* width: 100vw;  */
+    display: flex; 
+    justify-content: center;
+    
+}
+
+.rowZero{
+    
+    grid-area: slider;
+    margin-top: -7rem; 
+
+}
+
+.firstRow{
+    
+    grid-area: imageRow; 
+    margin-top: -17rem; 
+    
+
+}
+
+
+.secondRow{
+
+grid-area: cards; 
+margin-top: -12rem; 
+
+    
+}
+
+.fourthRow{
+
+    grid-area: imageText; 
+    
+    
+}
+
+.fifthRow{
+    grid-area: textImage; 
+    margin-top: 3rem; 
+    
+}
+
+.footerContainer{
+
+    grid-area: footer; 
+    margin-top: 3rem; 
+    
+}
+
+
+
+/* Add in the media queries here  */
+
+@media (max-width: 1000px){
+
+    .rowZero{
+    
+        grid-area: slider;
+        margin-top: -7rem !important; 
+        margin: 0 auto; 
+    
+        }
+    
+    .firstRow{
+        
+        grid-area: imageRow; 
+        margin-top: -15rem !important; 
+        margin: 0 auto; 
+    
+    }
+    
+    .secondRow{
+    
+    grid-area: cards; 
+    /* margin-top: -12rem;  */
+    margin: 0 auto; 
+    margin-top: -6rem; 
+        
+    }
+    
+    
+}
+
+@media(max-width: 900px){
+    
+    .firstRow{
+        
+        margin-top: -15rem !important; 
+        
+    }
+    
+}
+
+
+@media (max-width: 800px){
+    .secondRow{
+        
+        margin: 0 auto; 
+        margin-top: 4rem; 
+        margin-bottom: 2rem; 
+                
+    }
+    
+    
+    
+}
+
+@media (max-width: 500px){
+    
+    .rowZero{
+    
+        margin: 0 auto !important; 
+        margin-top: 3rem !important; 
+        margin-bottom: 19rem !important;
+
+    }
+    
+    
+    .secondRow{
+        
+        margin: 0 auto !important; 
+        margin-top: 3rem !important; 
+    }
+    
+    .firstRow{
+        
+        margin-top: 5rem; 
+        
+    }
+    
+    .thirdRow{
+        margin: 0 auto !important; 
+        
+        
+        
+    }
+    
+}
+
+
+
+

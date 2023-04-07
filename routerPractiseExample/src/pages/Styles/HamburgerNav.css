@@ -1,0 +1,375 @@
+*, *::after, *::before{
+
+    /* Remove the padding and margin here  */
+        padding: 0; 
+        margin: 0; 
+        
+        /* Add in the box sizing here  */
+        box-sizing: border-box;
+    
+    }
+    
+    html{
+    
+        scroll-behavior: smooth;
+        
+    }
+    
+    
+    body{
+            
+    /*  Add in the responsive full dimensions here  */
+    min-width: 100vw; 
+    min-height: 100vh;
+    position: relative;
+    
+    /* Remove the padding and margin here  */
+    padding: 0px; 
+    margin: 0px; 
+    
+    /* Add in the font family here  */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+    /* Add in the background color here and color  */
+    background-color: #444; 
+    /* color: wheat; */
+        
+        
+    }
+    
+    /* Add in the positional container here  */
+    .navpositionalContainer{
+        
+        position: relative;
+        
+        width: 100vw; 
+        min-height: 100vh;
+        
+    }
+    
+    /* Add in the main container here  */   
+    .navMainContainer{
+    
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        width: 100vw; 
+        min-height: 8rem;
+        /* background-color: aliceblue; */
+        
+        
+        /* Add in the code here to make sure there is not overlap  */
+        
+        overflow: visibility !important;
+        
+        /* Add in the z-index code here  */
+        z-index: 10000000;
+        
+        /* Add in the overlay code here  */
+        
+    }
+    
+    .navbar{
+    
+    
+    /* background-color: blue; */
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    padding-bottom: 1.5%; 
+    height: 6rem; 
+    
+    
+    
+    z-index: 20000 !important;
+    overflow: visible !important;
+    display: grid;
+    /* place-content: center;  */
+    /*  */
+    align-content: center; 
+    
+    }
+    
+    /* Add in the positional container here  */
+    .navbarListPositionalContainer{
+
+        width: 80vw; 
+        display: grid;
+        justify-content: center;
+        margin-left: 15%;; 
+        
+    }
+    
+    .navbarList{
+        
+        /* background-color: orange;  */
+        /* outline: 50px solid red;  */
+        width: 50vw; 
+        margin-top: -2rem; 
+    }
+    
+    .navListItem{
+        
+        display: inline;
+        margin-right: 2.3%; 
+        
+    }
+    
+    .dropdown{
+        
+        background-color: blue; 
+        /* display: none; */
+        /* opacity: 0;  */
+        
+        width: 8rem; 
+        min-height: 9rem;
+        position: absolute;
+        top: 4.4    rem; 
+        left: 53%; 
+        
+        
+        
+        
+    }
+    
+    .dropHidden{
+    
+        /* transform: translateY(-100rem); */
+        /* margin-left: 200rem;  */
+        opacity: 0;
+        display: none;
+        
+        
+        
+    }
+    
+    .dropVisible{
+        
+        opacity: 1; 
+        display: block;
+        
+        
+        
+    }
+  
+    
+
+    .iconContainer{
+        
+        margin-left: 2rem; 
+        margin-top: 2rem; 
+        
+        width: 5rem; 
+        display: grid;
+        align-content: center; 
+        padding-bottom: 1rem; 
+        
+    }
+    .bar{
+        
+        width: 2rem; 
+        height: 7px; 
+        color: black; 
+        background-color: rgb(78, 73, 73); 
+        margin-top: 7px; 
+        border-radius: 10%;
+        
+    }
+    
+    
+    /* HAMBURGER MENU  */
+    
+    
+    /* Add in the menu container here  */
+    .menu{
+    
+        
+        width: 100vw; 
+        min-height: 100vh;
+        position: absolute;
+        
+        left: 0.09%; 
+        top: 0; 
+        /* background-color: #f5f5f5;  */
+        background-color: rgb(18, 18, 95);
+        
+        margin-top: 19%; 
+        padding: 0 3rem; 
+        margin-left: 3rem; 
+        overflow: visible !important; 
+        display: grid;
+        
+        justify-content: center;
+        
+        z-index: 10000000 !important;
+    }
+    
+    
+    /* Add in the image containers here  */
+    
+    
+    /* Add in the positional container here  */
+    .navimagePositionalContainer{
+        
+        width: 100vw; 
+        min-height: 80vh;
+        position: relative; 
+        /* background-color: red;  */
+        overflow: hidden !important;
+        display: grid;
+        place-content: center;
+        
+    
+        /* background-image: url("https://images.unsplash.com/photo-1679176031571-85793af43bc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"); */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .paragraph{
+        
+        padding: 2rem; 
+        
+        
+    }
+    
+    .span{
+        
+        margin-left: 5px; 
+        color:rgb(63, 60, 60); 
+        
+        
+    }
+    
+    
+    /* Add in the visible and display classes here  */
+    .visible {
+    
+        /* Change the translate and padding values back to zero here  */
+        margin-left: 0; 
+        /* transform: translateX(0rem);
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+        animation: SlideIn; 
+        
+        /* Add in the timing functions here  */
+    }
+    
+    /* Add in the code here for the clicked and un-clicked  hamburger icon  */
+    
+    
+    
+    .hidden{
+            
+    /* Add in the translate values here  */
+    /* margin-left: -100rem; */
+    transform: translateX(-100rem);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+    }
+    
+    /* create the keyframes of the menu here  */
+    
+    
+    /* Add in the menu here  */
+    .hamburgerList{
+    
+    background-color: purple; 
+        
+    }
+    
+    
+    /* Style the menu items here  */
+    .listItem{
+    
+        
+        
+    }
+    
+    .navbarMenuList{
+            
+            margin-top: 50%; 
+    }    
+    
+    
+    /* Add in the icon animation here  */
+    burger-bar .clicked :nth-child(1){
+        
+        transform: translateY(145deg);
+        
+        
+    }
+    
+    burger-bar .clicked :nth-child(2){
+        
+        transform: scale(0.10000000);
+        
+    
+    
+    }
+    
+    burger-bar .clicked :nth-child(3){
+        transform: translateY(-45deg);
+        
+        
+    }
+    
+    burger-bar .unclicked{
+        
+        transform: translate(0);
+        
+
+    }
+    
+    
+    /* Add in the menu animation here  */
+    @keyframes SlideOut {
+        
+        
+        /* Okay so we want to move the menu from off the screen and we want to move the menu back from the 
+        screen outwards */
+        
+        from{
+        
+
+        }
+        
+        to{
+
+            
+        }
+        
+    }
+    
+    
+    @keyframes SlideIn {
+        
+        0% {
+
+            
+        }
+        
+        50%{
+
+            
+        }
+        
+        100%{
+
+            
+            
+        }
+        
+        
+    }
+    
+    
+    /* Add in the effects here  */
+    
+    
+    /* Add in the hover effects here  */
+    
+    

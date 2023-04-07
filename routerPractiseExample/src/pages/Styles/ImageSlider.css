@@ -1,0 +1,397 @@
+
+
+
+
+    *, *::after, *::before{
+        
+        /* Remove the padding and margin here  */
+        padding: 0; 
+        margin: 0; 
+        
+        box-sizing: border-box;
+        
+    }
+
+
+    html{
+
+        scroll-behavior: smooth;
+    }
+
+
+    /* Add in the root variables here  */
+    :root{
+
+        /* Add in the color pallette variables here  */
+        
+        /* Add in the font family variables here  */
+
+        /* Add in the padding and margin variables here  */
+
+        /* Add in the dimensional variables here  */
+
+        /* Add in the timing variables here  */
+    }
+
+    body{
+
+        padding: 0px; 
+        margin: 0px; 
+        
+        width: 100vw; 
+        min-height: 100vh;
+        position: relative; 
+        
+        background-color: #444; 
+        color: #9f9090;
+        font-family: cursive;
+        
+    }
+
+    .positionalContainer{
+        
+        width: 100vw; 
+        min-height: 100vh;
+        position: relative; 
+        
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        
+    }
+
+    .mainContainer{
+        
+        background-color: navy;
+            
+        width: clamp(12rem, 86vw + 1rem, 99rem); 
+        
+        margin: 1rem clamp(1rem, 8vw + 1rem, 44rem); 
+        position: relative; 
+        
+    
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto; 
+        place-content: center;
+        
+            
+    }
+    
+    
+    .carouselContainer{
+        
+        background-color: aliceblue;
+    
+        display: grid;
+        align-content: center;
+        position: relative; 
+        
+        
+        padding-top: 0.3rem; 
+        padding-bottom: 0.2rem; 
+        padding-left: 0.1rem; 
+        padding-right: 0.1rem;
+        
+        /* width: clamp(12rem, 34vw + 1rem, 99rem); */
+
+    }
+
+
+    .imageContainer{
+
+            background-color: #444;
+            
+        min-height: 55vh;
+        
+            
+    }
+    
+
+    .centeringContainer{
+        
+        display: grid;
+        justify-content: center;
+        
+    }
+
+
+    .navigationalPositionalDotsContainer{
+        
+        position: absolute; 
+        bottom: 0;  
+        
+    }
+  
+    
+    .imageCarouselParagraph{
+        
+        font-size: larger;
+    }
+
+.textContainer{
+    
+    background-color: white; 
+    
+    /* width: auto;  */
+    margin: 0 auto; 
+    display: grid;
+    place-content: center;
+    
+
+    
+}
+
+.textSection{
+    
+    display: grid;
+    place-content: center;
+    
+    
+}
+
+.headingContainer{
+    
+    margin-top: 0.7rem; 
+    
+}
+
+.buttonContainer{
+    
+    margin-top: 2.5rem; 
+    width: 12rem; 
+    max-height: 3rem;
+    display: grid;
+    place-content: center;
+    
+    
+    font-size: 22px;
+font-weight: 500;
+background-color: #F6821F;
+border-style: solid;
+border-width: 0px 0px 4px 0px;
+border-color: #CF6A14;
+border-radius: 14px 14px 14px 14px;
+padding: 14px 40px 14px 40px;
+    
+
+    
+    
+}
+
+.imageSliderButton{
+    
+    
+    
+}
+
+.imageSliderButtonSpan{
+    
+    margin-right: 7px; 
+    
+    
+}
+
+
+
+.SVGContainer{
+    
+    display: grid;
+    /* place-content: center; */
+    align-content: center; 
+    
+    min-height: 3rem;
+    background-color: brown;
+    margin-bottom: 0.5rem; 
+
+    
+}
+
+.SVG{
+    
+    /* margin-left: 1rem;  */
+    
+}
+
+
+@media(max-width: 1400px){
+    
+    .mainContainer{
+        
+        /* Reduce the margin clamp here  */
+        /* margin: 1rem clamp(1rem, 1vw + 1rem, 44rem);  */
+        width: clamp(12rem, 95vw + 1rem, 99rem); 
+        
+        margin-left: 1.4%
+        
+        
+    }
+    
+    .textSection{
+        
+        width: clamp(12rem, 45vw + 1rem, 99rem); 
+        background-color: orange; 
+                    
+                    
+    }
+    .imageContainer{
+    
+        width: clamp(12rem, 40vw + 1rem, 99rem) !important; 
+        margin-left: 3%; 
+        
+    }
+    
+}
+
+
+@media(max-width: 900px){
+    
+    /*  */
+    
+    
+}
+
+
+@media(max-width: 810px){
+    
+    /* Select the text section here  */
+    .textSection{
+        
+        /* reduce the top positioning here  */
+        top: 0; 
+        
+        margin-top: 1rem; 
+        
+
+    }
+    
+}
+
+
+/* Add in the media queries here  */
+@media (max-width: 700px){
+
+
+    .mainContainer{
+        
+        grid-template-columns: 1fr;
+        width: clamp(20rem, 92vw + 1rem, 90rem); 
+        padding: 0; 
+        margin: 0 auto; 
+        
+        
+    }
+    
+    /* Add in the Image container here  */
+    
+    .imageContainer{
+        
+        /* Add in the Aspect Ratio here  */
+        width: clamp(12rem, 90vw + 1rem, 99rem) !important; 
+        margin: 0 auto !important; 
+        
+        
+    }
+    
+    
+    .carouselContainer{
+        margin: 0 auto; 
+        padding: 0.3rem 0.2rem; 
+        width: clamp(12rem, 93vw + 1rem, 99rem); 
+        min-width: 100%;
+        
+        
+    }
+    
+    /* Add in the text container here  */
+    
+    .textContainer{
+        
+        width: clamp(12rem, 91vw + 1rem, 99rem); 
+        position: relative; 
+        padding: 0;
+        padding-left: 1.5rem; 
+        
+        margin: 0 auto; 
+        
+        
+        
+    }
+    
+    .textSection{
+        
+        position: relative;
+        margin: 0 auto; 
+        padding: 0; 
+        /* padding-left: 0.7rem;  */
+        
+        
+    }
+    
+    
+    
+    
+}
+
+
+@media(max-width: 550px){
+    .mainContainer{
+    
+        /* Increase the width here  */
+        
+    }
+    
+    /* Add in the image container here  */
+    .imageContainer{
+        
+        /* Add the padding here  */
+        
+        /* Alter the aspect ratio here  */
+        
+        
+
+    }
+    
+    
+    /* Add in the text container here  */
+    .textContainer{
+    
+
+        
+    }
+    
+    .textSection{
+        
+        padding-left: 0rem; 
+        /* padding-right: 0.1rem;  */
+        padding: 0; 
+        
+        
+    }
+    
+    
+}
+
+
+/* Add in the container queries here  */
+
+
+
+
+/* Add in the Effects here  */
+
+
+
+/* Add in the animations here  */
+
+
+
+
+
+
+
+
+
+
+
+
