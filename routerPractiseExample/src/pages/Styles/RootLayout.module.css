@@ -2,19 +2,7 @@
 /* Add in the root variables here and the color scheme  */
 
 *{
-
-    overflow-x: hidden;
-    --lightPrimary: #f5f5f5; 
-    --text: #121212; 
-    --secondaryText: #757575; 
-    --accentColor: #607D8B; 
-    --dividerColor: #BDBDBD;     
-
-    color: var(--text); 
-    
-    background-color: var(--lightPrimary);
-    padding: 0; 
-    margin: 0; 
+ 
     
 }
 
@@ -24,262 +12,30 @@ body{
     overflow-x: hidden;
     
     display: grid;
+}
+
+
+.navHolder{
+
+    
     
     
 }
 
 .root-layout{
 
-    position: relative;
-    z-index: -1;    
-    
-
-
-}
-
-
-.navbarContainer{
-    
-
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: 100vw; 
-    min-height: 7rem;
-    
-    position: relative; 
-  
-    z-index: 100; 
-    overflow:hidden;
-    
-    
-    box-shadow: 3px 3px 2px #aaaaaa;    
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.navbar{
-    
-    width: 100vw; 
-    min-height: 120px;
-    background-color: orange; 
     
 }
 
-    
-.navList{
 
-width: 100vw; 
-min-height: 100%;
-background-color: purple; 
-position: relative; 
-
-}
-
-/* Use this to center the list container here  */
-.flexListContainer{
-
-height: 120px;
-
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: blue; 
-
-}
-
-
-/* Style the flex container here  */
-.listContainer{
-
-    width: 70%; 
-  
-    height: auto;
-    background-color: lightgreen;
-    outline: 20px solid peru;
-    
-}
-
-/* Add in the hamburger menu here  */
-.workingHamburger{
-    
-    display: none;
-
-}
-
-
-
-.hamburgerMenuContainer{
+.footerContainer{
     
     position: absolute;
+    bottom: 0; 
     left: 0; 
-    margin-left: 10%; 
-    width: 10rem; ; 
-    /* min-height: 20rem; */
-    display: grid;
-    justify-content: center;
-    align-content: center;
-
+    right: 0; 
+    
     
 }
 
 
-.spanSlash{
-
-    padding-left: 10px;
-    color: #616a73; 
-    opacity: 0.1;  
-    
-}
-
-#navlink:focus{
-
-    
-    /* Add in the Prihiary Text color here  */
-    color: rgb(12, 12, 12); 
-    
-}
-
-li:focus > #navlink{
-
-color: black; 
-
-}
-
-li:focus{
-
-    color: black;
-    
-}
-
-
-
-.listItem{
-
-    display: inline;
-    padding-right: 1.5%; 
-
-}
-
-/* Add in the padding for the paragraph here  */
-
-#RootParagraph{
-
-    /* margin: 0 10%;  */
-    margin-top: 10%; 
-    margin-right: 10%; 
-    margin-left: 10%; 
-}
-
-
-/* THIS IS COVERING THE FOOTER  */
-
-#imageParagraphContainer{
-
-   
-    position: absolute; 
-    left: 0; 
-    top: 0; 
-    font-size: larger;
-   object-fit: fill;
-   width: 100%; 
-  background-color: transparent;
-  
-   height: 60%;
-   /* background-clip:text; */
-   background-clip: content-box;
-   
-   opacity: 1;  
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-
-
-/* THIS COULD BE COVERING AND OVERLAPPING THE FOOTER  */
-#imageParagraph{
-
-
-    min-width: 17rem;
-    max-width: 20%; 
-    /* Add in the primary text color here  */
-    color: white;
-    background-color: black;
-   /* background-clip: content-box; */
-    
-    
-    
-   background-clip: text;
-   -webkit-background-clip: text;
-
-    display: flex;
-    align-items: center;
-
-
-}
-
-#picture{
-
-    margin-bottom: 9rem;
-}
-
-
-#item{
-
-    cursor: pointer;
-    
-}
-
-
-
-#item:hover > #navlink{
-    
-    transform: scale(1.001);    
-    color: rgba(4, 5, 5, 0.9);
-
-    
-}
-
-.navbarContainer{
-    
-    margin-bottom: 10%; 
-    
-}
-
-
-
-@media (max-width: 900px){
-
-    #RootParagraph{
-    
-        margin-top: 30%; 
-        margin-bottom: 10%; 
-        padding-bottom: 7.5%; 
-
-    }
-}
-
-/* Add in the media queries here  */
-
-@media (max-width: 800px){
-
-    .flexListContainer{
-    
-        
-        display: none;
-        
-        
-    }
-    
-}
-
-
-@media (max-width: 610px){
-
-
-    #RootParagraph{
-    
-        margin-top: 43%;
-        margin-bottom: 14%; 
-        
-}
-
-}

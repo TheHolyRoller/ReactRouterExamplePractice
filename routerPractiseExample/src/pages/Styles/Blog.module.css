@@ -1,0 +1,499 @@
+
+
+*, *::after, *::before{
+
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+        
+    /* Add in the outline and background color here  */
+
+
+
+}
+
+
+
+html{
+
+ scroll-behavior: smooth;
+ 
+    
+}
+
+:root{
+
+    
+    
+    
+}
+
+
+body{
+
+    padding: 0px; 
+    margin: 0px; 
+    
+    width: 100vw; 
+    min-height: 100vh;
+    position: relative; 
+    
+    background-color: #444; 
+    
+    /* Add in the font family here  */
+    
+}
+
+
+/* Add in the main container here  */
+
+
+.mainContainer{
+    
+    width: 100vw; 
+    min-height: 100vh;
+    position: relative; 
+    
+    display: grid;
+    place-content: center; 
+
+    
+}
+
+
+.contentContainer{
+
+    
+    
+    
+    
+}
+
+
+.heroContainer{
+
+    width: 100vw; 
+    min-height: 70vh;
+    position: relative; 
+    margin: 0 auto;
+    
+    
+}
+
+
+
+.heroTextContainer{
+    
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+        
+}
+
+
+.heroText{
+
+    
+    
+    
+}
+
+.heroImage{
+
+
+/* background-image: url("https://images.unsplash.com/photo-1680682420550-1b57f884daf3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60");
+min-height: 70vh;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+    
+margin-top: 6rem; 
+
+margin-bottom: 3rem; */
+
+
+margin-top: -2.3vh; 
+
+    
+}
+
+
+/* ------MAIN PAGE CONTENT -------- */
+
+.pageContentContainer{
+
+    
+    
+}
+
+
+
+/* ---------BLOG SECTION--------- */
+
+.blogSection{
+
+
+    
+    width: clamp(12rem, 72vw + 1rem, 99rem); 
+    margin: 0 auto; 
+    padding-bottom: 3rem; 
+    
+    
+}
+
+
+
+.blogTitleContainer{
+
+    
+    font-size: larger;
+    min-height: 2rem;
+    
+    
+}
+
+
+
+
+.blogTitle{
+
+    
+    
+}
+
+
+
+.metaDataContainer{
+    
+    
+    min-height: 2rem; 
+    
+    
+}
+
+
+.metaData{
+
+    
+    
+}
+
+.blogLink{
+
+    
+}
+
+
+/* -----TEXT SECTION -------- */
+
+.textContainer{
+    
+    width: auto; 
+    margin: 0 auto; 
+    
+}
+
+
+
+.blogText{
+
+    margin-bottom: 1.3rem; 
+    
+}
+
+
+.blogHeadlineContainer{
+
+    margin: 1rem auto; 
+    font-weight: 400;
+    font-size: larger;
+
+        
+}
+
+
+
+.blogHeadline{
+
+    
+}
+
+
+.authorContainer{
+
+    
+    
+    
+}
+
+.blogAuthor{
+
+margin: 2rem auto; 
+
+    
+}
+
+
+/* --------LINKS SECTION ----------- */
+
+.blogLinksContainer{
+
+    
+    display: flex;
+    background-color: blue;
+
+}
+
+
+
+.blogLinksList{
+
+    
+    
+    
+}
+
+
+
+.iconContainer{
+
+
+    
+}
+
+
+.icon{
+
+    
+}
+
+
+
+.label{
+
+    
+    
+    margin-left: 0.3rem; 
+    
+
+    
+}
+
+
+
+.iconContainer{
+
+    
+}
+
+
+
+
+.icon{
+
+    
+}
+
+
+.label{
+
+    
+    
+    
+}
+
+
+
+.iconContainer{
+
+
+
+    
+    
+}
+
+.icon{
+
+
+}
+
+
+/* --------INTERACTIVE BOTTOM LINKS  */
+
+
+.interactionLinksContainer{
+
+    /* background-color: orange;  */
+     display: flex; 
+    width: 100%; 
+    justify-content: flex-end; 
+    border-top: 1px solid lightslategray; 
+    /* margin-top: 2rem;  */
+        
+    
+    
+}
+
+
+.interactionLinksList{
+
+
+    
+}
+
+.interactionLink{
+
+    display: inline-block;
+    
+    margin-left: 0.5rem; 
+    
+    
+}
+
+
+.iconContainer{
+
+    
+    
+    
+}
+
+
+
+
+.interactionIcon{
+
+    
+    
+}
+
+
+
+.interactionIcon{
+
+
+    
+    
+}
+
+
+
+
+.iconContainer{
+
+    
+}
+
+
+
+.interactionIcon{
+
+    
+    
+}
+
+
+
+
+
+/* FOOTER SECTION  */
+
+.footerContainer{
+
+    
+    
+}
+
+
+
+
+
+/* Add in the media queries in here  */
+@media(max-width: 780px){
+    
+    .heroImage{
+        
+        
+        margin-top: -3vh; 
+        
+    }
+    
+}
+
+
+@media(max-width: 600px){
+    
+    .heroImage{
+        
+        margin-top: -7.9vh; 
+        
+        
+        
+    }
+    
+}
+
+
+
+@media(max-width: 550px){
+
+    .heroImage{
+        
+        
+        margin-top: -8.6vh; 
+        
+        
+    }
+
+    
+
+}
+
+
+/* Add in the container queries in here  */
+
+
+
+/* Add in the Effects in here  */
+
+
+
+/* Add in the animations in here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

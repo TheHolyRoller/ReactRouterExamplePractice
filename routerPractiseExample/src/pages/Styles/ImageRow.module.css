@@ -7,11 +7,15 @@
     
     box-sizing: border-box;
     
+    
 }
+
 
 :root{
 
-    
+
+--min-height: 30vmax; 
+
     
 }
 
@@ -43,47 +47,39 @@ body{
 
 .positionalContainer{
 
-    width: 100vw; 
-    min-height: 100vh;
-    position: relative;
-    display: grid; 
-    justify-content: center;
-    align-content: center;
-    
-    
 }
+
 
 
 .mainContainer{
     
     
-    width: clamp(10rem, 99vw + 1rem, 99rem); 
-    min-height: 40vh;
+    width: clamp(10rem, 95vw + 1rem, 99rem); 
     
     
-    overflow: hidden;
     margin: 0 auto; 
     padding: 0 clamp(1rem, 2vw + 1rem, 5rem);
 
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));   
     
     gap: 2rem; 
-
+    
+    margin-left: -7%;
+    max-height:var(--min-height) !important;
+    
     
 }
 
     .imageOne{
 
-    background-image: url("https://images.unsplash.com/photo-1678614033804-6e1b6580c8a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"); 
-    background-position: center;
+        background-image: url("https://images.unsplash.com/photo-1678730505377-7b21cabb6485?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"); 
+        background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
-    min-height: 50vh;
-    
+    max-height: var(--min-height);
     
     display: grid;
     place-content: center;
@@ -96,7 +92,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     
-    min-height: 50vh;
+    max-height: 20vh;
+    
     display: grid;
     place-content: center;
     
@@ -150,48 +147,64 @@ body{
         
     }
     
+    
+    /* Select the images here  */
+    .mainContainer{
+
+       
+        
+        
+    }
+    
+    
+    .imageOne{
+        
+        min-height: var(--min-height);
+    }
+    
+    
+    .imageTwo{
+
+        
+        
+    }
 }
 
-
-
-
-/* Add in the media queries here  */
 @media (max-width: 700px){
 
-/* Select the main container here  */
 .mainContainer{
     
     grid-template-columns: 1fr;
     background-color: black; 
     width: clamp(12rem, 90vw + 1rem, 99rem); 
-    margin: 0 auto; 
+    min-height: calc(var(--min-height) * 2.5);
+    
+    
     place-content: center;
 }    
 
-
-/* Select the image container here  */
-
-.imageOne{
-
-    
-}
-.imageOne{
-    
-    
-}
-
-/* Select the text container here  */
-
-.paragraphContainer{
-    
-    
-}
 
 .ImageRowParagraph{
     
     width: auto; 
     margin: 0 auto; 
     
+}
+
+
+
+.imageOne{
+    
+    min-height: var(--min-height);
+    
+    
+    
+}
+
+.imageTwo{
+    
+    min-height: var(--min-height);
+    
     
     
     
@@ -200,8 +213,50 @@ body{
 
 
 
+
     
 }
+
+
+/* Add in the orientation media queries here  */
+@media(orientation: landscape){
+
+    /* Select the image container here  */
+    .mainContainer{
+
+    
+    width: 80vmax !important; 
+    background-color: aliceblue; 
+    margin: 0 auto; 
+    padding-right: 6.6rem; 
+    min-height: var(--min-height);
+        
+        
+    }
+    
+    /* Select the images here  */
+    .imageOne{
+
+        min-height: var(--min-height) !important;
+        /* width: 60vmin !important;  */
+        margin: 0 auto !important; 
+        
+        
+    }
+    
+    .imageTwo{
+    
+        min-height: var(--min-height) !important; 
+        /* width: 60vmin !important;  */
+        margin: 0 auto !important; 
+        
+        
+        
+    }
+    
+    
+}
+
 
 
 /* Add in the container queries here  */

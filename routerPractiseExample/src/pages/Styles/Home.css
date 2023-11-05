@@ -10,10 +10,10 @@
 
     padding: 0; 
     margin: 0; 
-        /* background-color: var(--lightPrimary); */
-        color: var(--text); 
+
     
 }
+
 
 body{
 
@@ -22,7 +22,7 @@ body{
     min-width: 100vw;
     
 
-    box-sizing: border-box;
+    box-sizing: content-box !important;
     overflow-x: scroll !important;
     display: grid;
     justify-content: center;
@@ -30,98 +30,301 @@ body{
 
 }
 
-.home{
-    
-    /* position: relative; */
-    /* display: grid; */
-    /* justify-content: center; */
+.heroImage{
 
-}
-
-.homeImageContainer{
-
-
-background-color: white;
-
-/* Add in the responsive image dimensions here  */
-width: clamp(100rem, 100vw + 1rem, 50rem); 
-min-height: 75vh; 
-
-z-index: 4;
-
-position: relative;
-display: grid;
-justify-content: center;
-align-content: center; 
-
-
-/* Add in the background image here  */
-background-image: url("https://images.unsplash.com/photo-1679468971189-fda1a22061d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60");
-background-size: cover; 
-background-position: center; 
-background-repeat: no-repeat;
-
-
-}
-.homeLineContainer{
+    position: relative; 
+    width: 100vw; 
+    min-height: 50vh;
+    /* margin-top: 7vw;  */
+    margin-top: -2.3vh; 
     
 }
 
-.homeLine{
+
+.heroTextContainer{
+
+    
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    z-index: 20;    
+    transform: translate(-50%, -50%);
+    
+}
+
+
+.heroText{
+
     
     
 }
 
-.homeImageText{
-    
-    /* position: absolute;  */
-    color: rgb(194, 188, 188); 
-    background-color: rgba(444, 444, 444, 0.00001); 
-    width: 50vw; 
-    z-index: 1000 !important; 
-    
-}
 
-/* Add in the paragraph Container here  */
-.homeParagraphContainer{
+.heroImageScr{
 
-    
-    /* width: 60vw;  */
-    padding: 3rem; 
-    display: grid;
-    justify-content: center;
-}
-
-.homeParagraph{
-
-    padding: 0 5%; 
-
-}
-
-.homeCardsPositionalContainer{
-
-min-width: 100vw; 
-/* background-color: black;  */
-display: flex; 
-justify-items: center;
-/* margin-left: calc(1vw + 1.1%); */
     
 }
 
 
 .homeCardsContainer{
     
-    width: 100vw; 
-   
-    display: flex; 
-    justify-items: center; 
-    /* outline: 10px solid purple;  */
+    width: 90vw; 
+    margin: 0 auto; 
+    display: grid;
+    place-content: center;
     
+    min-height: 30vh;
+
+    position: relative; 
+    z-index: 2000;
     
-   /* background-color: blue;  */
-   margin: 0 auto; 
     
 }
+.verseSpan{
+    
+    
+    display: block;
+    font-size: clamp(0.5rem, 1vw + 1rem, 2rem); 
+    
+}
+
+.homeParagraph{
+
+    width: auto; 
+    margin: 0 auto; 
+    
+}
+
+.homeCTAPositionalContainer{
+
+min-width: 100vw; 
+display: flex; 
+justify-items: center;
+
+    
+}
+
+
+.homeCTAContainer{
+    
+    width: 100vw; 
+   
+   
+    display: inline-block;
+    vertical-align: top;
+    
+    height: auto; 
+
+   margin: 0 auto; 
+   margin-top: -5rem; 
+   margin-bottom: -5rem;
+    
+}
+
+.extraParagraphContainer{
+    
+    position: relative;
+
+
+    width: 60vw; 
+    color:#151414 !important;
+    
+    padding-top: 3rem;
+    padding-bottom: 4rem; 
+
+    margin: 0 auto; 
+
+}
+
+
+.homeLineContainer{
+    
+    width: 70vw; 
+    
+    display: grid;
+    margin: 2rem auto; 
+    padding-bottom: 2rem; 
+    
+}
+
+
+.homeLine{
+
+    min-height: 1px;
+    background-color: white; 
+    color: white; 
+    margin: 4px; 
+
+}
+
+.extraParagraph{
+    
+    font-weight: 100;   
+    line-height: 1.5em;
+    white-space: pre-wrap;
+    text-align: center;
+    
+}
+
+
+.footerContainer{
+    
+    position: relative;
+    z-index: 2000;  
+
+}
+
+@media(max-width: 900px){
+    .homeCTAContainer{
+        
+        padding-top: 5rem; 
+        padding-bottom: 3rem; 
+        
+    }
+    
+}
+
+
+
+@media (max-width: 790px){
+
+    .homeCardsContainer{
+        
+        width: 100vw; 
+        display: grid;
+        place-content: center;
+        padding-bottom: 3rem; 
+        
+        
+    }
+    
+    .homeCTAContainer{
+        margin: 0 auto; 
+        padding-bottom: 2rem;
+        
+    }
+    
+    .homeImageText{
+        
+        /* transform: translate(-50%, -50%); */
+        font-size: clamp(1.3rem, 3vw + 1rem, 3rem); 
+        
+    }
+    
+    .homeCTAPositionalContainer{
+        
+        margin: 0 auto; 
+        padding-bottom: 2rem;
+        
+    }
+    
+    .extraParagraphContainer{
+        width: 90vw; 
+        
+    }
+    
+    
+    .homeLineContainer{
+        
+        width: 90vw; 
+        
+        
+    }
+  
+    
+    
+}
+
+
+@media(max-width: 500px){
+    .homeCardsContainer{
+        
+        width: 100vw; 
+        display: grid;
+        place-content: center;
+        padding-bottom: 1.3rem; 
+        padding-right: 0.7%; 
+        
+        margin: 1rem auto !important;
+        
+    }
+    
+    .homeCTAContainer{
+        margin: 0 auto; 
+        padding-bottom: 3rem; 
+        padding-top: 2rem; 
+        
+    }
+    
+    .homeCTAPositionalContainer{
+        
+        margin: 0 auto; 
+        padding-bottom: 3rem;
+        
+    }
+    
+
+    
+}
+
+
+
+@media(orientation: landscape){
+    
+    @media(max-width: 900px){
+        
+        
+        .homeImageContainer{
+    
+            margin-top: 6.6rem;
+            
+        }
+
+    }
+    
+}
+
+
+@media(max-width: 780px){
+    
+    .heroImage{
+        
+        
+        margin-top: -3vh; 
+        
+    }
+    
+}
+
+
+@media(max-width: 600px){
+    
+    .heroImage{
+        
+        margin-top: -7.9vh; 
+        
+        
+        
+    }
+    
+}
+
+
+
+@media(max-width: 550px){
+
+    .heroImage{
+        
+        
+        margin-top: -8.6vh; 
+        
+        
+    }
+
+    
+
+}
+
 
 
 

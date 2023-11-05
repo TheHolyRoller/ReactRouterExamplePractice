@@ -36,9 +36,9 @@ function TabletCards() {
       
       
       <div className={tabletCardsCSS.buttonContainer}>
-      <button className={tabletCardsCSS.button}>
+      <div className={tabletCardsCSS.button}>
       Learn More 
-      </button>
+      </div>
       
       </div>
 
@@ -71,10 +71,12 @@ function TabletCards() {
       </div>
       
       
+      
+      
       <div className={tabletCardsCSS.buttonContainer}>
-      <button className={tabletCardsCSS.button}>
+      <div className={tabletCardsCSS.button}>
       Learn More 
-      </button>
+      </div>
       
       </div>
 
@@ -110,9 +112,9 @@ function TabletCards() {
       
       
       <div className={tabletCardsCSS.buttonContainer}>
-      <button className={tabletCardsCSS.button}>
+      <div className={tabletCardsCSS.button}>
       Learn More 
-      </button>
+      </div>
       
       </div>
 

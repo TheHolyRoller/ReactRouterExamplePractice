@@ -1,0 +1,459 @@
+
+            /* 
+
+
+
+
+            */
+
+
+            *, *::after, *::before{
+                
+                padding: 0; 
+                margin: 0; 
+                box-sizing: border-box;
+                
+                /* Add in the outline and background color here  */
+                    
+                    
+                    
+            }
+
+
+            html{
+                scroll-behavior: smooth;
+                
+                
+            }
+
+
+            :root{
+                
+
+                
+            }
+
+
+            body{
+                
+            width: 100vw; 
+            min-height: 100vh;
+            position: relative;
+            
+            padding: 0px; 
+            margin: 0px; 
+            
+            background-color: #444;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            
+            
+                
+                
+            }
+
+
+            /* Add in the main container here  */
+
+            .mainContainer{
+
+                width: 100vw; 
+                min-height: 100vh;
+                position: relative; 
+                display: grid;
+                place-content: center; 
+                
+                
+                
+                
+            }
+
+            .contentContainer{
+
+                width: 70vw;
+                /* background-color: purple;  */
+                margin: 0 auto; 
+                
+                
+                
+            }
+
+            .headlineContainer{
+
+                
+                min-width: 100%;
+                display: grid;  
+                place-content: center;
+                margin-bottom: clamp(1rem, 5vw + 1rem, 5rem);
+
+                
+            }
+
+
+            .CTAHealine{
+
+
+
+                
+            }
+
+
+
+            .gridCTAContainer{
+                
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                
+            }
+
+
+
+            .columnContainer{
+                
+
+                /* background-color: purple;  */
+                overflow: hidden;
+                
+                display: grid;
+                place-content: center;
+                
+            }
+
+            .iconContainer{
+
+                display: grid;
+                place-content: center;
+                font-size: 6rem;
+                
+                
+            }
+
+
+            .giveIcon{
+                
+                margin-top: -0.3rem !important; 
+                
+                
+                
+            }
+
+
+            .headerContainer{
+
+                display: grid;
+                place-content: center;
+                margin-top: 0.1rem !important;
+                transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+                
+                
+
+            }
+            
+            .giveButtonContainer{
+
+                
+                transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+
+                
+            }
+            
+            
+            
+            
+            
+            .giveButtonContainer:hover{
+                
+                transform: translateX(-3deg);
+                transform: scale(1.1);
+                background-color: #292828; 
+                
+                
+                
+            }
+            
+            
+            .columnHeader{
+                
+                
+                
+            }
+
+
+            .detailsContainer{
+                
+                
+                display: grid;
+                place-content: center;
+
+            }
+
+            .details{
+
+                
+                
+            }
+
+
+            .serviceDetailsContainer{
+
+                display: grid;
+                place-content: center;
+                
+            }
+
+
+            .serviceHeaderContainer{
+                
+                margin: 0rem  auto; 
+                
+                margin-top: 2rem; 
+                
+                display: grid;
+                
+                place-content: center;
+
+            }
+
+
+            .serviceDetailsID{
+
+                
+                
+                
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+            .locationDetailsContainer{
+
+                
+                display: grid;
+                place-content: center;
+                
+                
+            }
+
+
+            .locationDetails{
+
+                margin: 0.65rem auto; 
+
+            }
+
+
+            /* -------SECOND COLUMN =--------- */
+
+            .columnContainer{
+
+                    display: grid;
+                    place-content: center;
+
+            }
+
+
+            .iconContainer{
+
+                width: auto; 
+                
+                margin: 0 auto; 
+            }
+
+
+            .headerContainer{
+                
+                margin-top: 2.5rem; 
+                
+                
+                
+            }
+
+
+            .laptopIcon{
+                /* margin-bottom: 1rem !important;  */
+                
+                
+                
+                
+            }
+
+
+
+
+            .columnHeaderContainer{
+
+                width: auto; 
+                margin: 0 auto;
+                display: grid;
+                place-content: center;
+                margin-bottom: 1rem; 
+                margin-top: 0.5rem; 
+                
+            }
+
+
+            .columnHeader{
+
+
+
+            }
+
+            .serviceDetailsContainer{
+
+                display: grid;
+                place-content: center;
+                margin-bottom: 3rem;
+                /* margin-top: -2rem;  */
+                
+                
+                
+            }
+
+            .serviceDetails{
+                
+                width: auto; 
+                
+                margin: 0.5rem auto; 
+            }
+
+
+            .serviceButtonContainer{
+
+                /* width: auto;  */
+                margin: 0 auto;
+                display: grid;
+                min-height: 2rem;
+                background-color: black; 
+                width: 9rem; 
+                place-content: center;
+                margin-top: 1rem; 
+                transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+
+            }
+
+            .serviceButton{
+
+                cursor: pointer;
+                
+                
+                
+            }
+            
+            .serviceButtonContainer:hover{
+                
+                transform: translateX(-3deg);
+                transform: scale(1.1);
+                background-color: #292828; 
+                            
+            }
+
+
+
+            /* ------THIRD COLUMN ----- */
+
+            .columnHeader{
+
+                display: grid;  
+                place-content: center;
+                width: auto;
+                margin: 0 auto;
+                padding-top: 0.5rem; 
+
+            }
+
+
+            .giveDetailsContainer{
+                
+                display: grid;
+                place-content: center;
+                width: 13rem; 
+                margin: 0 auto; 
+                /* margin-left: 2rem;  */
+                padding-left: 2rem; 
+                
+            }
+
+
+
+
+            .giveParagraph{
+                
+                margin-top: 2rem; 
+                
+                
+            }
+
+
+            .giveButtonContainer{
+
+                display: grid;
+                place-content: center;
+                width: auto;
+
+                margin: 2rem auto; 
+                
+                /* margin: 2 auto; */
+                height: 2rem;
+                background-color: black; 
+                width: 9rem; 
+                
+            }
+
+
+            .giveButton{
+
+                /* margin-top: 2rem;  */
+                
+                
+            }
+
+
+
+            /* Add in the media queries here  */
+            @media(max-width: 800px){
+                
+                .gridCTAContainer{
+                    
+                    grid-template-columns: 1fr;
+                    gap: 2rem; 
+                            
+                }
+                
+            }
+            
+            
+            @media(max-width: 500px){
+                .giveButtonContainer{
+                    margin-right: 3rem;
+                    
+                    
+                    
+                }
+                
+                
+                
+            }
+
+
+            /* Add in the container queries here  */
+
+
+
+            /* Add in the Effects here  */
+
+
+            /* Add in the animations here  */
+
+
+
+
+
+

@@ -1,5 +1,6 @@
 import React from 'react'
-import Footer from './Navigation/Footer';
+
+import Moon from '../assets/Moon.jpg'; 
 
 // Import the Style sheet here 
 import MinistryCSS from '../pages/Styles/Ministry.module.css'; 
@@ -11,59 +12,37 @@ import CardsRow from './CardsRow';
 import ImageTextRow from './ImageTextRow';
 import { MdInsights } from 'react-icons/md';
 import TextImage from './TextImage';
+
 // import ImageSlider from '../Components/ImageSlider';
 import ImageSlider from '../Components/ImageSlider'; 
 
+import Footer from '../pages/Navigation/Footer'; 
 
+
+import CarouselComponent from './CarouselComponent';
 
 function Ministry() {
   return (
     <div className={MinistryCSS.mainContainer}>
-      {/* Ministry */}
       
-      {/* Add in the hero section here  */}
+      
       <header className={MinistryCSS.imageContainer} >
       
-      <div className={MinistryCSS.heroImage}></div>
+      <div className={MinistryCSS.heroImage}>
+    
+    <div className={MinistryCSS.heroTextContainer}>
+    
+    <div className={MinistryCSS.heroText}>
+      Hero Text 
+    
+    </div>
+    </div>
+    
+    <img className={MinistryCSS.heroImageScr}  src={Moon}></img>
       
-      <div className={MinistryCSS.imageTextContainer}>
-      
-      {/* Add in the image header here  */}
-      <div className={MinistryCSS.imageHeaderContainer}>
-      
-      <h1 className={MinistryCSS.imageHeader}>
-      
-      
-      Image Header 
-        
-      </h1>
-      
-      
-      </div>
-      
-      
-      <p className={MinistryCSS.imageText} >
-      
-      {/* Lorem ipsum dolor sit amet consectetur adipisicing.  */}
-      
-      </p>
-      
-      <div className={MinistryCSS.buttonContainer}>
-        
-        <button className={MinistryCSS.callToActionButton} >
-          
-          
-        </button>
-        
-        <button className={MinistryCSS.learnMoreButton} ></button>
-        
-        
-      </div>
-      
-      
-      </div>
-      
+    </div>
       </header>
+      
       
       
       {/* Add in the content container here  */}
@@ -75,91 +54,81 @@ function Ministry() {
       <div className={MinistryCSS.rowZero}>
             
       {/* Add in the image Carousel here with the Text  */}
-        <ImageSlider/>
+        {/* <ImageSlider/> */}
+      
+      <CarouselComponent/>
+      
+      <div className={MinistryCSS.textContainer}>
+      
+
+      <div className={MinistryCSS.sliderHeaderContainer}>
+      
+      <div className={MinistryCSS.sliderHeader}>
+      
+      About what we do in Albania 
+        
+      </div>
+        
+        
+      </div>
+      
+      <div className={MinistryCSS.sliderParagraphContainer}>
+      
+      
+      <p className={MinistryCSS.sliderText}>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere corporis eius commodi blanditiis soluta? Quaerat eveniet facere dignissimos ratione, animi fugit officiis doloremque expedita unde molestias perspiciatis, doloribus quas perferendis placeat. Consequuntur rerum labore beatae? Voluptas vero iure culpa, dolores at nobis accusantium atque placeat deserunt libero doloremque nulla officiis.
+      
+      </p>
+        
+        
+      </div>
+      
+
+      <div className={MinistryCSS.SliderTextButtonContainer}>
+      
+      <div className={MinistryCSS.sliderTextButton}>
+        
+        Learn More 
+        
+      </div>
+        
+      </div>
+      
+        
+      </div>
       
       </div>
       
       <div className={MinistryCSS.firstRow}>
       
-      {/* Add in the page paragraph here  */}
       <div className={MinistryCSS.textContainer}>
       
       <p className={MinistryCSS.text} >
-      {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta optio reprehenderit perspiciatis. Voluptate similique qui eligendi pariatur neque maiores. Ullam. */}
       </p>
       </div>
-      
-      {/* Add in the Image Row component here  */}
+
+
       <ImageRow/>
       
       </div>
       
-      
-      {/* Add in the second Row of Content here  */}
+
       <div className={MinistryCSS.secondRow}>
-      
-      {/* Add in the Key Ministry Row here  */}
-      {/* <ImagesRow/> */}
       <CardsRow/>
       
       </div>
       
-      <div className={MinistryCSS.thirdRow}>
-        
-        {/* Add in the video Text Row here  */}
-        
-        
-        
-      </div>
-      
-      
-      <div className={MinistryCSS.fourthRow}>
-      
-      {/* Add in the Image Text Row here for the mission statement  */}
-      
+      <div className={MinistryCSS.imageTextRow}>
       <ImageTextRow/>
       
-      
-      
       </div>
       
-      
-      <div className={MinistryCSS.fifthRow}>
-      
-      {/* Add in the Text Image here  */}
-      
-      <TextImage/>
-      
-      
-      
-      
       </div>
-      
-      
-      
-      {/* Add in the sixth Row here  */}
-      <div className={MinistryCSS.sixthRow}>
-      
-      {/* Add in the final call to action here  */}
-      
-      
-
-      
-      
-      </div>
-      
-      
-      </div>
-      
-      {/* Add in the footer here  */}
       
       <div className={MinistryCSS.footerContainer}>
 
-      <Footer/>
-        
-        
-        
-        
+      {/* <Footer/> */}
+
       </div>
       
     </div>

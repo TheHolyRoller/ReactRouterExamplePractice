@@ -1,0 +1,71 @@
+*, *::after, *::before{
+
+    
+    
+}
+
+
+
+
+body{
+    
+    
+    
+    
+    
+}
+
+
+
+html{
+
+    
+    
+}
+
+
+carousel-wrapper{
+    
+    max-height: 40vh;
+    outline: 40px solid lime; 
+    
+
+    
+}
+
+ul  {
+    
+}
+
+
+.firstImage{
+    
+    /* max-height: 10vh !important; */
+
+    
+}
+
+
+
+
+div{
+    
+ /* min-height: 50vh !important; */
+    
+}
+
+img{
+
+    /* max-height: 20vh !important; */
+
+    
+}
+
+
+div:nth-child(1){
+    
+    /* min-height: 50vh !important; */
+    
+    
+}
+

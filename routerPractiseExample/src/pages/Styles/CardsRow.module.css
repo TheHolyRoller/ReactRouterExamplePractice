@@ -1,37 +1,6 @@
 
 /* 
 
-Okay so what we are making is a Row 
-that contains some images lined up one next to the other. 
-
-This means we need to have a main container that takes 
-up the full viewport width. 
-
-This way we can position the element where it is needed. 
-
-Okay next we need the container for the image Row itself. 
-
-Once we have this done we can set the responsive dimensions 
-
-and make sure that everything is contained properly within this container. 
-
-
-Next we need section containers. This will hold the image as well as the text and 
-Call to action. 
-
-First of all we'll need the row container. Then we'll need the container for the image and then the image. 
-
-Then we'll need the text container and the text. 
-
-We we'll need the container for the button. 
-
-Once that is done we'll have the button and the first row should be complete. 
-
-Then we need to specify how everything will stack on top of each other. 
-
-
-
-
 
 */
 
@@ -43,11 +12,6 @@ Then we need to specify how everything will stack on top of each other.
     
     box-sizing: border-box;
     
-    /* Add in the outline and background color here  */
-    /* outline: 4px solid lime;  */
-    
-    /* background-color: rgba(333, 333, 999, 0.3); */
-    
 }
 
 html{
@@ -57,13 +21,11 @@ scroll-behavior: smooth;
 }
 
 
+
 :root{
 
 
 /* Add in the Root Variables here  */
-    
-    
-    
     
 }
 
@@ -83,14 +45,10 @@ background-color: #344434;
 
 color: rgb(34, 33, 33); 
 
-
-/* Add in the font family here  */
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     
 }
-
-/* Add in the main container here  */
 
 .mainContainer{
     
@@ -98,30 +56,31 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     min-height: 100vh;
     position: relative; 
     display: grid;
-    /* justify-content: center; */
     place-content: center;
     
 }
 
 .trackContainer{
 
-    width: 80vw; 
-    background-color: blue; 
+    width: 73vw; 
     height: auto; 
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-content: center;
-    
+    margin: 0 auto; 
     
     
 }
 
 .rowContainer{
 
-    width: 20vw; 
-    margin: 0 auto; 
+    /* width: 20vw;  */
     
+    width: clamp(12rem, 20vw + 1rem, 22rem); 
+    
+    
+    margin: 0 auto; 
     
 }
 
@@ -131,24 +90,30 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     display: grid;
     justify-content: center;
     
+}
+
+.textHeaderContainer{
+    
+    margin-top: 2rem; 
+    font-size: 1.5rem; 
+    
+}
+
+
+.text{
+    
+    margin-left: -0.2rem !important; 
+    color:rgb(196, 190, 190);
     
 }
 
 
 .header{
 
-    /* Clamp the width of the header here  */
     font-size: clamp(2rem, 1vw + 1.5rem, 5rem); 
     margin: 1rem 0; 
     
-    
 }
-
-.imageContainer{
-    
-    
-}
-
 
 
 .image{
@@ -156,27 +121,18 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     background-image: url("https://images.unsplash.com/photo-1679859229899-b89913461269?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60");
     background-size: cover;
     background-position: center;
-    min-height: 40vh;
     
+    
+    min-height: 34vmax !important;
+    
+    width: 21.5rem;
     border-radius: 5%; 
     
 }
 
 
-
-.textContainer{
-    
-    
-    
-}
-
-
-
 .text{
-
-    
     margin: 5%; 
-    
     
 }
 
@@ -184,42 +140,352 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 .buttonContainer{
     
     width: 100%; 
-    
+    display: grid;
     
 }
 
 
 .button{
     
-    width: 100%; 
+    width: 12rem; 
     margin-top: 4%; 
     margin-bottom: 3%; 
+    height: 3rem; 
+    background-color: #202022; 
+    display: grid; 
+    place-content: center;
+    color:rgb(176, 176, 179);
+    outline: none !important;
+    border-radius: 5%; 
+
+}
+
+
+.button:hover{
+
+    transform: scale(1.05);
+    transform: translateX(-2deg);  
+    background-color: #37373a; 
     
 }
 
-/* Add in the media queries here  */
-@media(max-width: 1000px){
+
+
+
+
+@media(max-width: 950px){
     
     .trackContainer{
-        
         
         grid-template-columns: 1fr; 
         width: auto; 
         margin: 0 auto; 
-        
                     
     }
     
     .rowContainer{
         width: clamp(21rem, 42vw + 1rem, 33rem);
         
+    }
+    
+}
+
+
+
+
+
+@media(max-width: 1000px ){
+    
+    
+    @media(orientation: landscape){
+
+
+        .trackContainer{
         
+        width: 40vmax; 
+        
+        margin-left: 4%; 
+        
+        display: flex !important;
+
+        }
+        
+        .rowContainer{
+
+            margin-left: 4rem !important; 
+            
+            
+        }
+        
+        .image{
+        
+            min-height: 27vmax !important;
+    
+            width: 12rem;
+            
+            
+        }
+        
+    }
+    
+    
+}
+
+
+@media(orientation: landscape){
+
+     @media(max-width: 1100px){
+        
+
+        .rowContainer{
+                
+            margin-right: 9rem !important; 
+                                
+        }
+        
+        .trackContainer{
+
+        width: 90vmax !important;
+
+        
+        margin-right: 7.5vmax !important; 
+        
+        place-content: center;  
+
+        display: flex !important;
+        justify-items: space-around;
+
+
+        }
+        
+    }
+    
+    
+}
+
+
+    @media(orientation: landscape){
+    
+    @media(max-width: 1300px){
+        
+        .rowContainer{
+                    
+                    
+        }
+        
+        .trackContainer{
+
+        width: 90vmax !important;
+
+        margin-right: 6vmax !important; 
+        
+        place-content: center;  
+        
+        display: flex !important;
+        justify-items: space-around;
+        outline: 4px solid lime; 
+        
+        
+
+        }
+        
+        #lastCardID{
+            
+            /* margin-right: 3rem !important;  */
+            
+            
+        }
+        
+        #previousCard{
+
+            
+        }
         
     }
     
     
     
 }
+
+
+@media(orientation: landscape){
+
+    
+    @media(max-width: 1200px){
+
+        
+        .trackContainer{
+
+            display: flex;
+            justify-content: space-around;
+            
+            /* outline: 5px solid red; */
+            outline: none; 
+            
+            margin-left: 5%; 
+            
+            
+            
+        }
+        
+        
+        /* Select the cards here  */
+        .rowContainer{
+            
+            
+            width: clamp(11rem, 11vmin + 1rem, 99rem) !important;
+            
+            
+            
+        }
+        
+        .image{
+            
+            width: clamp(11rem, 35vmin + 1rem, 99rem) !important;
+            
+        }
+        
+    }
+    
+    
+    
+}
+
+
+
+
+
+@media(orientation: landscape){
+    
+    @media(max-width: 950px){
+        
+        .trackContainer{
+
+            width: 80vmax !important;
+            
+            overflow: hidden;
+            
+            margin-right: 9.7vmax !important; 
+            
+            place-content: center;  
+            
+            display: flex !important;
+            
+            }
+            
+            
+            .rowContainer{
+
+                margin: 0 auto !important; 
+
+            }
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+}
+
+@media(orientation: landscape){
+    
+    @media(max-width: 900px){
+        
+        .rowContainer{
+            
+            margin: 0 auto !important;
+            
+        }
+        
+        
+        .trackContainer{
+
+            
+            margin-right: 14vmin !important; 
+            margin: 0 auto !important; 
+            margin: auto auto !important; 
+            
+            
+        }
+        
+    
+    }
+    
+}
+
+
+
+
+
+
+@media(orientation: landscape){
+    
+    @media(max-width: 700px){
+        
+        .rowContainer{
+            
+
+            margin: auto 4rem;
+
+        }
+        
+        
+        .trackContainer{
+
+            
+         
+            display: grid;
+            place-content: center;
+            gap: 2rem !important; 
+            width: 90vmax !important;
+            margin-right: 0 !important; 
+
+        }
+        
+    
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(orientation: landscape){
+    
+    @media(max-width: 800px){
+        
+        .rowContainer{
+            
+            margin: 0 auto !important;
+            
+        }
+        
+        .trackContainer{
+        
+         margin-right: 21vmin !important; 
+         
+            
+            
+        }
+        
+       
+        
+    
+    }
+    
+}
+
 
 
 /* Add in the container queries here  */

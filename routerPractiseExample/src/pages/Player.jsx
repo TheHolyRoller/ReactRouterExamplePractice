@@ -292,16 +292,17 @@
       
       const togglePlayPause = () => {
         // Check if the audio is playing or not
-        const isPlaying = !audioRef.current.paused;
+        // const isPlaying = !audioRef.current.paused;
         
         console.log("Toggle Play")
         
         // If it is playing, pause it
-        if (isPlaying) {
-          audioRef.current.pause();
+        
+        // if (isPlaying) {
+          // audioRef.current.pause();
         } else {
           // If it is not playing, play it
-          audioRef.current.play();
+          // audioRef.current.play();
         }
         setPlaying(!playing); 
         

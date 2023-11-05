@@ -1,0 +1,113 @@
+        *, *::before, *::after{
+
+            
+            padding: 0; 
+            margin: 0; 
+            box-sizing: border-box;
+
+            
+        }
+
+        html{
+
+            scroll-behavior: smooth;
+            
+        }
+
+        body{
+            
+        }
+
+        :root{
+
+        }
+
+
+        .mainContainer{
+            
+        }
+
+
+        /* Add in the content container here  */
+
+        .formContainer{
+            
+            
+        }
+
+        .form{
+            position: relative; 
+            
+        }
+
+
+        .newsletterInput{
+            
+        }
+
+
+        .inputContainer{
+
+            position: relative; 
+
+        }
+        
+
+        .SVGContainer{
+            
+            position: absolute;
+            right: 31.5%;
+            top: 20%; 
+            z-index: 200;
+            
+            font-size: 1.1rem; 
+            margin-right: 5px; 
+            cursor: pointer; 
+            
+            
+        }
+
+        .SVGContainer:hover{
+            font-size: 1.2rem; 
+            
+        }
+
+
+        .submitButtonContainer{
+
+            
+            width: 100%; 
+            margin: 0 auto; 
+            display: grid;  
+            place-content: center;
+            
+        }
+
+
+        .submitButton{
+            
+        }
+
+
+        /* Add in the media queries here  */
+
+
+
+
+
+        /* Add in the container queries here  */
+
+
+
+        /* Add in the effects here  */
+
+
+
+        /* Add in the animations here  */
+
+
+
+
+
+
+

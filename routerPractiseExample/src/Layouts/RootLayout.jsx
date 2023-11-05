@@ -4,32 +4,22 @@
 import { Outlet, NavLink, ScrollRestoration } from "react-router-dom"
 import { Link } from 'react-router-dom'; 
 
+import Renderer from "../Components/Renderer";
 
-// import Footer from '../pages/Footer'; 
-
-
-
+import '../pages/Styles/RootLayout.module.css'; 
 
 
+
+import { useOutletContext } from "react-router-dom";
 
 import '../pages/Ministry'; 
 import '../pages/KidsMinistry'; 
 import '../pages/Volunteering'; 
-// import Cards from '../pages/Cards'; 
-// import Picture from "../pages/Picture";
-// import Paragraph from "../pages/Paragraph";
-// import Home from '../pages/Home';
+
 import Home from '../pages/Home'; 
-// import About from '../pages/About'; 
 
-// import Give from '../pages/Give'; 
-// import Ministry from "../pages/Ministry";
-// import Meetings from "../pages/Meetings";
-// import Volunteering from "../pages/Volunteering";
-
-
-// import HamburgerNav from "../pages/HamburgerNav";
 import HamburgerNav from '../pages/Navigation/HamburgerNav'; 
+import Footer from "../pages/Navigation/Footer";
 
 
 export default function RootLayout() {
@@ -44,23 +34,37 @@ export default function RootLayout() {
     ];
     
     
-    
     const goHome = () => {
     
     return <Navigate to="/" replace={true}  />
       
     }
 
+    // const [name] = useOutletContext();
+
   return (
-      
-      <div className="root-layout">
-      
-      
-      
-      {/* Add in the HamburgerNav here  */}
+      <>
+      <div className="navHolder">
       <ScrollRestoration/>
       <HamburgerNav/>
+        
+      </div>
+      <div className="root-layout">
+
+
+     
+      {/* <Renderer/> */}
+    <main>
+      <Outlet/>
+      
+    </main>
+    
+    <div className="footerContainer">
+      <Footer/>
       
     </div>
+      
+    </div>
+      </>
   );
 }

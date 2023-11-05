@@ -2,6 +2,9 @@
 /* 
 
 
+
+
+
 */
 
 *, *::before, *::after{
@@ -78,26 +81,18 @@
         place-content: center; 
         justify-content: center;
         align-content: center;
+
         
-        
-        /* Get rid of any padding and margin here  */
         padding: 0px; 
         margin: 0px; 
-        
-        /* overflow-x: hi*/
-        /* display: flex; */
-        /* justify-items: center; */
-        
-        
         
     }
     
 
     
-    /* Style the card title here  */
     .cardTitle{
         
-        /* Clamp the font size here  */
+
         font-size: clamp(0.7rem, 2vw + 1rem, 3rem); 
         padding-bottom: 0.7rem; 
         
@@ -110,16 +105,13 @@
     .TabletCardsContainer{
         
     
-        color: black; 
+        color: rgb(20, 19, 19); 
         margin-left: 7.6%; 
         
-        
-        width: clamp(25rem, 99vw + 1rem, 300rem); 
-        
+    width: clamp(25rem, 99vw + 1rem, 300rem); 
     
     display: flex;
     justify-items: space-around;    
-     
 
      overflow-x: hidden;
 
@@ -154,7 +146,7 @@
     .imageMainContainer{
         
        display: grid; 
-       align-content: center;
+
        justify-content: center; 
         
     }
@@ -162,14 +154,14 @@
     .imageContainer{
     
         /* Why does this only work when I lower the rem?  */
-        width: clamp(9rem, 15vw + 1rem, 20rem); 
+        width: clamp(9rem, 23vw + 1rem, 29rem); 
         overflow: hidden;
-        min-height: 10rem;
+        min-height: 17rem;
         
         border-radius: 5%; 
 
+
         background: url("https://images.unsplash.com/photo-1678648113407-913545723db2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60");
-        
         background-repeat: no-repeat; 
         background-size: cover;
         background-position: center;
@@ -188,7 +180,9 @@
         padding: 0 1rem; 
         padding-top: 0.5rem; 
         /* Clamp the width of the paragraph here  */
-        width: clamp(11.3rem, 17vw + 1rem, 19rem); 
+        width: clamp(11.3rem, 23vw + 1rem, 29rem); 
+        text-align: left;
+        
 
     }
     .buttonContainer{
@@ -202,9 +196,23 @@
     }
     
     .button{
-    
+        
+        transition: all 400ms  cubic-bezier(0.165, 0.84, 0.44, 1);
+        cursor: pointer;
+        
     
     }
+    
+    .button:hover{
+
+    color: #252323; 
+    transform: scale(1.05);
+    transform: translateX(-2deg);
+    
+        
+        
+    }
+    
     
     /* Add in the media queries here  */
     
@@ -225,7 +233,7 @@
         .card{
             
             width: clamp(12rem, 99vw + 1rem, 30rem); 
-            background-color: blue; 
+            /* background-color: blue;  */
             
             
         }

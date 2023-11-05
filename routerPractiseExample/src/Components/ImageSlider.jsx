@@ -4,8 +4,10 @@ import {useCallback, useState, useEffect} from 'react'
 import '../pages/Styles/ImageSlider.css'; 
 
 
+
+
+
 function ImageSlider() {
-  
   const [currentIndex, setCurrentIndex] = useState(0); 
   
   const slides = [ 
@@ -41,7 +43,7 @@ const nextSlide = () =>{
 
 const slideContainerStyles = {
     
-    height: '100%', 
+    // height: '100%', 
     position: 'relative', 
 }
 
@@ -53,7 +55,10 @@ const slideStyles = {
     borderRadius: '10px',
     backgroundPosition: 'center',
     backgroundSize: 'cover', 
-    backgroundImage: `url(${slides[currentIndex].url})`
+    backgroundImage: `url(${slides[currentIndex].url})`,
+    display: 'block',
+    maxHeight: '40vh' 
+    
 }
 
 const leftArrowStyles = {
@@ -108,7 +113,8 @@ return(
 
 <div className="positionalContainer">
 
-<div className="holder"></div>
+ <div className="holderContainer">
+
  
  <div className="mainContainer">
     
@@ -122,6 +128,7 @@ return(
  ❰
  
  </div>
+ 
  </div>
  
  <div style={rightArrowStyles} className='rightArrowContainer'>
@@ -142,7 +149,7 @@ return(
  
  </div>
  </div>
- 
+ {/* style={slideSTyles} */}
  {/* Add in the image container here  */}
  <div style={slideStyles} className='imageContainer'>
  
@@ -190,6 +197,11 @@ Ekal Vidyalaya Foundation of Canada (Ekal Canada) was founded in 2007. Ekal is a
 </p>
 
 
+
+
+
+
+
 {/* Add in the button container here  */}
 <div className="buttonContainer">
 
@@ -223,6 +235,8 @@ Ekal Vidyalaya Foundation of Canada (Ekal Canada) was founded in 2007. Ekal is a
  </div>
  
  {/* Main container  */}
+ </div>
+ {/* Holder container  */}
  </div>
  
 </div>

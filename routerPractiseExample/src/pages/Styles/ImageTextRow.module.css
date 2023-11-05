@@ -63,6 +63,10 @@ html{
 
     display: flex;
     justify-items: center;
+    position: relative; 
+    width: 100vw; 
+    
+    
     
     
     
@@ -70,14 +74,17 @@ html{
 
 .rowContainer{
     
-    display: grid;  
-    grid-template-columns: 1fr 1fr; 
+    display: flex;
+    justify-items: space-around;
+    width: 62% !important;
     
-    /* width: 72vw;  */
-    width: clamp(12rem, 72vw + 1rem, 99rem); 
+}
+
+
+
+.imageContainer{
+
     
-    margin: 0 auto; 
-    background-color: blue; 
     
 }
 
@@ -88,22 +95,94 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
     
+    
         
-      min-height: 62vh;
-      /* width: 30vw;  */
-      width: clamp(12rem, 35vw + 1rem, 33rem); 
+      min-height: 30vmax;
+
+      /* width: 25rem !important;  */
+      /* width: 50vmin !important;  */
+      max-width: 60vmin !important; 
+      
       position: relative; 
       z-index: 10;  
       border-radius: 5%;
-      /* margin-left: 9%;  */
+      margin-left: 0.45rem; 
+      margin-right: 0.5rem; 
       
+      outline: 5px solid lime; 
+      
+      
+      
+}
+
+
+
+.buttonContainer{
+
+    
+}
+
+.button{
+    
+    width: 9rem; 
+    background-color: #202022 !important; 
+    height: 3rem; 
+    display: grid;
+    place-content: center;
+    border-radius: 5%; 
+    /* color: #b5b7c2;  */
+    margin-top: 2rem; 
+    
+    
     
 }
 
 
+.button:hover{
+    
+    transform: scale(1.05);
+    background-color: #393940; 
+    transform: translateX(-2deg);
+    
+    
+}
+
 .header{
 
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
+    font-size: 1.6rem; 
+    margin-left: 5.5%; 
+
+    
+}
+
+.text{
+    
+    /* margin-top: 1rem;  */
+    
+    
+    
+}
+
+
+
+.textSection{
+
+margin-top: 1.9rem; 
+    
+width: clamp(11rem, 70vmin + 1rem, 99rem); 
+
+outline: 5px solid lime; 
+
+
+
+}
+
+.textContainer{
+    
+
+    
+    
     
 }
 
@@ -112,7 +191,8 @@ html{
     width: 100%; 
     
     margin-top: 1rem; 
-    margin-left: 1rem; 
+    /* margin-left: 1rem;  */
+    
     
 }
 
@@ -122,38 +202,35 @@ html{
 
     .rowContainer{
         
-      
-         grid-template-columns: 1fr;
+        display: grid;
+        
+         grid-template-columns: 1fr !important;
          width: clamp(13rem, 90vw + 1rem, 44rem); 
-         margin-top: 0.5rem; 
-         
+         /* margin-top: 0.5rem;  */
+        margin: 2.3rem auto; 
+        
+        
         
     }
     
     /* Try and fix the image and spacing issues here  */
     .image{
-        min-width: 100%; 
+    
         
     }
     .buttonContainer{
         
-        min-width: 100%; 
-        background-color: blanchedalmond; 
+        min-width: 5rem; 
+        /* background-color: blanchedalmond !important;  */
         margin: 0 auto; 
-        display: grid;
-        /* justify-content: center; */
-        
+
         
     }
     
     .button{
-        /* width: auto; 
-        margin: 0 auto;  */
-        width: 50%; 
-        margin-left: 3.5%; 
-        margin-bottom: 1rem; 
-        margin-top: 0.5rem; 
-        
+      
+               
+                
     }
     
         
@@ -165,7 +242,14 @@ html{
     
     .textSection{
         
+        /* width: 99vmin !important; */
         
+        /* margin: 0 auto;  */
+        display: grid;
+        place-content: center;
+        /* margin-left: 19vmin !important;  */
+        
+
         
     }
     
@@ -176,8 +260,312 @@ html{
         padding-bottom: 0.5rem; 
     }
     
+    .image{
+
+        width: 80vmin !important;
+        margin: 0 auto; 
+        
+
+        
+    }
+    
 }
 
+
+
+@media(max-width: 900px){
+    .textSection{
+    
+    width: clamp(3rem, 60vw + 1rem, 99rem); 
+    margin: 0 auto; 
+    padding-left: 3.8rem !important;
+        
+    }
+    
+    
+    .rowContainer{
+        
+        padding-right: 2.4%; 
+        
+    }
+    
+  
+    
+    
+    
+}
+
+
+@media(max-width: 500px){
+    .rowContainer{
+        
+        
+        padding-right: 11%; 
+        
+        
+    }
+    
+    
+    .textSection{
+        
+        outline: 5px solid red; 
+
+        
+    }
+    
+    .headerContainer{
+
+        padding-right: 12rem !important; 
+        
+        
+    }
+    
+    
+    .header{
+
+        
+        
+    }
+    
+    .textContainer{
+
+
+        padding-right: 2rem !important;
+
+    }
+    
+    
+    .text{
+
+        margin-left: -1rem; 
+
+    }
+    
+    
+    
+}
+
+
+
+@media(max-width: 700px){
+    
+
+.image{
+    
+    
+    min-height: 40vmax;
+    max-width: 80vmin !important;
+    
+    
+    
+    
+}
+    
+    
+    
+    
+}
+
+
+
+
+@media(orientation: landscape){
+
+.rowContainer{
+    
+    grid-template-columns: 1fr 1fr !important;
+    
+    width: clamp(12rem, 72vw + 1rem, 99rem); 
+    margin: 3.5rem auto; 
+    margin-left: clamp(12vmin, 68vmin + 1rem, 23rem) !important; 
+    outline: none; 
+    
+    
+}
+
+
+.textSection{
+    
+    /* width: 55vmin !important; */
+
+    margin: 1rem auto; 
+    display: grid;
+    
+    padding-left: 2rem; 
+    
+    
+    place-content: center !important;
+    outline: none; 
+
+    
+}
+
+/* Adjust the image height here  */
+
+.image{
+
+    width: clamp(3rem, 85vmin + 1rem, 30rem) !important; 
+    
+    margin: 2.5 auto; 
+    height: 30vmax !important;
+    outline: none; 
+    
+}
+
+    
+    @media (max-width: 950px){
+        .image{
+            
+        width: 95vmin !important; 
+        max-width: 90vmin !important; 
+        
+            
+        }
+        
+        .rowContainer{
+            max-width: 90vmin !important; 
+            display: grid;
+            place-content: center;
+        }
+        
+        
+        .textSection{
+
+            max-width: 90vmin !important; 
+            width: 90vmin !important; 
+            padding: 0 !important; 
+            margin: 0 auto !important; 
+            
+        }
+        
+        .headerContainer{
+            
+            margin-bottom: 0 !important;
+
+        }
+        
+        
+        .header{
+            
+            margin: 0 2rem; 
+
+        }
+
+        
+        .text{
+        
+            max-width: 80vmin !important; 
+            width: 80vmin !important; 
+            
+            padding: 2rem !important; 
+            margin: 0 0 !important; 
+            
+        }
+        
+        
+        .buttonContainer{
+            
+            margin: 0 auto; 
+            
+        }
+        .button{
+            margin-top: 0;  
+            margin-left: 1.5rem; 
+        }
+        
+    }
+    
+}
+
+
+@media(orientation: landscape){
+    
+    @media(max-width: 1200px){
+        
+        .rowContainer{
+
+        }
+        
+        
+        .textContainer{
+            
+        width: 40vw; 
+            
+        }
+        
+        .headerContainer{
+            
+            padding-right: 16rem; 
+            
+        }
+        
+    }
+    
+}
+
+@media(orientation: landscape){
+    
+    @media(max-width: 500px){
+        
+        .rowContainer{
+        
+            outline: 200px solid orange; 
+        }
+    }
+}
+
+
+@media(orientation: landscape){
+    
+    @media(max-width: 1300px){
+
+        .rowContainer{
+        
+        margin-left: clamp(2rem, 28vmin + 1rem, 15rem) !important;
+        outline: 5px solid red; 
+        margin-right: 9rem; 
+            
+        }
+    }
+    
+    
+    @media(max-width: 1100px){
+        
+        .rowContainer{
+            
+            margin-left: 7.8vmin !important; 
+            min-width: 90vmax; 
+            outline: none; 
+        }
+    }
+    
+    
+    @media(max-width: 950px){
+        
+        .rowContainer{
+            
+            min-width: 90vmax !important;
+            margin-left: 4rem !important; 
+        
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            outline: none; 
+            
+        }
+        
+    }
+    
+    
+    @media(max-width: 700px){
+        
+        .rowContainer{
+
+         grid-template-columns: 1fr !important;
+            
+        }
+    }
+
+}
 
 /* Add in the container queries here  */
 

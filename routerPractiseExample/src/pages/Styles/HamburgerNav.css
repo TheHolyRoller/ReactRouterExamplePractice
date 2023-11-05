@@ -1,10 +1,10 @@
 *, *::after, *::before{
 
-    /* Remove the padding and margin here  */
+
         padding: 0; 
         margin: 0; 
         
-        /* Add in the box sizing here  */
+        
         box-sizing: border-box;
     
     }
@@ -18,24 +18,20 @@
     
     body{
             
-    /*  Add in the responsive full dimensions here  */
+
     min-width: 100vw; 
     min-height: 100vh;
     position: relative;
     
-    /* Remove the padding and margin here  */
     padding: 0px; 
     margin: 0px; 
     
-    /* Add in the font family here  */
+
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
-    
-    /* Add in the background color here and color  */
     background-color: #444; 
-    /* color: wheat; */
         
-        
+        /* Bob */
     }
     
     /* Add in the positional container here  */
@@ -44,9 +40,54 @@
         position: relative;
         
         width: 100vw; 
-        min-height: 100vh;
         
     }
+    
+    
+    .smallerLogoPositionalContainer{
+            
+        width: 65vw; 
+        /* position: relative;  */
+        position: absolute; 
+        top: 0; 
+        right: 0; 
+        
+        min-height: 4rem;
+        
+        margin-top: 1.2rem; 
+        
+        display: none;
+        
+        background-color: #2c2a2a; 
+        
+        
+
+    }
+    
+    .smallLogoContainer{
+        
+        
+        
+        
+       
+        
+        
+    }
+    
+    
+    
+    
+    .smallerLogo{
+
+        
+        
+        
+    }
+    
+    
+    
+    
+    
     
     /* Add in the main container here  */   
     .navMainContainer{
@@ -55,40 +96,31 @@
         top: 0; 
         left: 0; 
         right: 0; 
-        width: 100vw; 
-        min-height: 8rem;
-        /* background-color: aliceblue; */
-        
-        
-        /* Add in the code here to make sure there is not overlap  */
+        width: 110vw; 
         
         overflow: visibility !important;
-        
-        /* Add in the z-index code here  */
         z-index: 10000000;
-        
-        /* Add in the overlay code here  */
         
     }
     
+    
     .navbar{
-    
-    
-    /* background-color: blue; */
+
     position: absolute;
     top: 0; 
     left: 0; 
     right: 0; 
     padding-bottom: 1.5%; 
-    height: 6rem; 
+    /* height: 5.7rem;  */
     
-    
+
+    background-color: #242222; 
+
     
     z-index: 20000 !important;
     overflow: visible !important;
     display: grid;
-    /* place-content: center;  */
-    /*  */
+    
     align-content: center; 
     
     }
@@ -103,46 +135,109 @@
         
     }
     
+    
     .navbarList{
         
-        /* background-color: orange;  */
-        /* outline: 50px solid red;  */
         width: 50vw; 
-        margin-top: -2rem; 
+        margin-top: -2.5rem; 
     }
     
+    
+    /* Find out why the color is not working here  */
     .navListItem{
         
         display: inline;
         margin-right: 2.3%; 
+        transition: all 400ms  cubic-bezier(0.165, 0.84, 0.44, 1);
+        padding-bottom: 0.7rem; 
+        
         
     }
     
+    .navListItem:hover{
+        
+        
+        background: rgba(72, 70, 70, 0.3);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 10px );
+        -webkit-backdrop-filter: blur( 10px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        transform: translate(-5px, -5px);
+        padding-bottom: 1rem; 
+        padding-left: 0.2rem; 
+        padding-right: 0.2rem; 
+
+        min-height: 1rem;
+ 
+ }
+    
+    
+    .hamburgerNavLink{
+                
+        color: #ada6a6; 
+        transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        /* padding-bottom: 1rem !important;  */
+        
+        
+        
+    }
+  
+    
+    
+
+    
     .dropdown{
         
-        background-color: blue; 
-        /* display: none; */
-        /* opacity: 0;  */
+        /* background-color: blue;  */
+        background-color: #444; 
+        padding: 6px; 
         
-        width: 8rem; 
-        min-height: 9rem;
-        position: absolute;
-        top: 4.4    rem; 
-        left: 53%; 
+        width: 8vw; 
+        position: absolute; 
+        left: 52%; 
+        background: rgba(72, 70, 70, 0.3);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10px );
+-webkit-backdrop-filter: blur( 10px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
         
         
+    }
+    
+    .aboutListItem{
+        
+        transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        
+        
+    }
+    
+    
+    
+    .aboutListItem:hover{
+        
+        transform: scale(1.1);
+
+                
+    }
+    
+    .dropDownNavLink{
+
+        
+        transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+        
+    }
+    
+    .dropDownNavLink:hover{
         
         
     }
     
     .dropHidden{
-    
-        /* transform: translateY(-100rem); */
-        /* margin-left: 200rem;  */
+
         opacity: 0;
         display: none;
-        
-        
         
     }
     
@@ -150,8 +245,7 @@
         
         opacity: 1; 
         display: block;
-        
-        
+
         
     }
   
@@ -159,16 +253,36 @@
 
     .iconContainer{
         
-        margin-left: 2rem; 
+        margin-left: 0.8rem; 
         margin-top: 2rem; 
+        position: static;
+        
         
         width: 5rem; 
         display: grid;
         align-content: center; 
         padding-bottom: 1rem; 
+        position: relative;
+        z-index: 200000;   
+
+        opacity: 0; 
+        
+        
         
     }
-    .bar{
+    .burger-bar{
+        
+        width: 2rem; 
+        height: 7px; 
+        color: black; 
+        background-color: rgb(78, 73, 73); 
+        margin-top: 7px; 
+        border-radius: 10%;
+
+        
+    }
+    
+    #burder-bar{
         
         width: 2rem; 
         height: 7px; 
@@ -180,60 +294,36 @@
     }
     
     
+    
     /* HAMBURGER MENU  */
-    
-    
-    /* Add in the menu container here  */
     .menu{
     
-        
         width: 100vw; 
         min-height: 100vh;
-        position: absolute;
+        position: fixed;
         
         left: 0.09%; 
         top: 0; 
-        /* background-color: #f5f5f5;  */
-        background-color: rgb(18, 18, 95);
+
+        background-color: #2d2a2a; 
         
-        margin-top: 19%; 
-        padding: 0 3rem; 
         margin-left: 3rem; 
         overflow: visible !important; 
-        display: grid;
-        
-        justify-content: center;
-        
-        z-index: 10000000 !important;
+
+        display: flex;
     }
     
+
     
-    /* Add in the image containers here  */
-    
-    
-    /* Add in the positional container here  */
     .navimagePositionalContainer{
-        
-        width: 100vw; 
-        min-height: 80vh;
-        position: relative; 
-        /* background-color: red;  */
-        overflow: hidden !important;
-        display: grid;
-        place-content: center;
-        
-    
-        /* background-image: url("https://images.unsplash.com/photo-1679176031571-85793af43bc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"); */
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+     
         
     }
     
     .paragraph{
+    
         
         padding: 2rem; 
-        
         
     }
     
@@ -242,134 +332,289 @@
         margin-left: 5px; 
         color:rgb(63, 60, 60); 
         
-        
     }
+
     
-    
-    /* Add in the visible and display classes here  */
     .visible {
     
-        /* Change the translate and padding values back to zero here  */
         margin-left: 0; 
-        /* transform: translateX(0rem);
-        transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
         animation: SlideIn; 
         
-        /* Add in the timing functions here  */
     }
-    
-    /* Add in the code here for the clicked and un-clicked  hamburger icon  */
-    
     
     
     .hidden{
-            
-    /* Add in the translate values here  */
-    /* margin-left: -100rem; */
     transform: translateX(-100rem);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
         
     }
     
-    /* create the keyframes of the menu here  */
     
-    
-    /* Add in the menu here  */
-    .hamburgerList{
-    
-    background-color: purple; 
+    .navListContainer{
         
-    }
-    
-    
-    /* Style the menu items here  */
-    .listItem{
-    
-        
-        
+        position: relative; 
+        width: 100vw; 
+
     }
     
     .navbarMenuList{
-            
-            margin-top: 50%; 
+            margin-top: 4.8rem; 
+
+            position: relative; 
+            color: white  !important; 
+            transition: all 400ms  cubic-bezier(0.165, 0.84, 0.44, 1);
     }    
     
     
-    /* Add in the icon animation here  */
-    burger-bar .clicked :nth-child(1){
-        
-        transform: translateY(145deg);
+    .navLinkItem{
+
         
         
     }
     
-    burger-bar .clicked :nth-child(2){
+    
+    
+    .navMenuListItem{
+
+        margin-top: 1rem; 
+        font-size: 1.8rem;
+        width: 20vw; 
+        position: relative; 
+        z-index: 20;
+        margin-left: 3%; 
+        color: #444 !important;
+        transition: all 400ms  cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    }
+    
+    
+    .navListItemContainer{
+        
+        border-bottom: 3px solid rgb(88, 89, 101); 
+        width: 100vw; 
+        
+    }
+
+
+    .hamburgerSocialMediaList{
+                
+        width: auto; 
+        margin: 0 auto; 
+        padding-top: 2rem; 
+                
+    }
+    
+    .hamburgerSocialMediaItem{
+        
+        display: inline-block;
+
+        width: 30vw; 
+        font-size: 2.6rem;
+        
+    }
+    
+    .hamburgerSocialMediaItem:hover{
+        
+        transform: scale(1.100);
+                
+    }
+  
+    
+.callToActionContentContainer{
+    
+    position: relative; 
+    
+}
+
+.smallLogoContainer{
+
+    position: absolute; 
+    
+}
+    
+    .callToActionContainer{
+        
+
+        height: 3rem; 
+        
+        display: grid;
+        place-content: center;
+
+        grid-template-columns: 2.5fr 1.3fr;
+        gap: 0.3rem; 
+        
+        width: 93vw; 
+        
+        margin: 0 auto; 
+
+        position: absolute; 
+        top: 10%; 
+        left:0; 
+        right: 0; 
+        
+        margin-top: 2.7rem; 
+        
+    }
+    
+    .hamburgerEvents{
+        
+        display: grid;
+        place-content: center;
+        background-color: black; 
+        height: 2.7rem;
+        color: rgb(63, 60, 60); 
+        transition: all 400ms  cubic-bezier(0.165, 0.84, 0.44, 1);
+
+        
+    }
+    
+    
+    .hamburgerEvents:hover{
+
+        transform: scale(1.03);
+        color: black; 
+        
+    }
+    
+    .updateButton{
+        
+        display: inline-block;
+        cursor: pointer;
+                
+    }
+ 
+    
+    .hamburgerGive{
+
+        display: grid;
+        place-content: center;
+        
+        height: 2.7rem;
+        background-color:rgb(50, 50, 164); 
+        transition: all 400ms  cubic-bezier(0.165, 0.84, 0.44, 1);
+        
+        
+    }
+    
+    
+    .hamburgerGive:hover{
+        
+        transform: translateY(-2px);
+        transform: scale(1.03);
+        color: black !important;
+        
+        
+        
+        
+    }
+
+ 
+
+    
+    #burger-bar .clicked :nth-child(1){
+
+        transform: translateY(145deg);
+
+    }
+    
+    .burger-bar .clicked :nth-child(2){
         
         transform: scale(0.10000000);
-        
     
     
     }
     
-    burger-bar .clicked :nth-child(3){
+    .burger-bar .clicked :nth-child(3){
         transform: translateY(-45deg);
         
         
     }
     
-    burger-bar .unclicked{
+    .burger-bar .unclicked{
         
         transform: translate(0);
+
+    }
+
+
+@media (max-width: 900px) {
+    .navbar{
         
+        position: fixed;    
 
     }
     
-    
-    /* Add in the menu animation here  */
-    @keyframes SlideOut {
+    .navbarList{
         
-        
-        /* Okay so we want to move the menu from off the screen and we want to move the menu back from the 
-        screen outwards */
-        
-        from{
-        
-
-        }
-        
-        to{
-
-            
-        }
+        margin-top: 0; 
+        margin-bottom: 0.4rem; 
         
     }
     
-    
-    @keyframes SlideIn {
-        
-        0% {
-
-            
-        }
-        
-        50%{
-
-            
-        }
-        
-        100%{
-
-            
-            
-        }
-        
+    .iconContainer{
+        display: block;
+        opacity: 1; 
         
     }
     
+    /* Select the positional container here  */
     
-    /* Add in the effects here  */
+    .navbarListPositionalContainer{
+        
+        width: 100vw; 
+
+        margin: 0 auto; 
+    }
     
+}
+
+
+
+@media(max-width: 600px){
     
-    /* Add in the hover effects here  */
+        .navbar{
+            
+            height: 4rem;
+            overflow: hidden !important;
+        }
+        
+        .iconContainer{
+        
+            margin-bottom: 3%; 
+            
+        }
+
+        .navbarList{
+            
+            display: none;
+            overflow: hidden;
+            
+        }
+        
+  .smallerLogoPositionalContainer{
+            
+            display: inline-block !important; 
+            background-color: #242222; 
+            color: black; 
+
+            height: 0.5rem;
+            
+        }
+        
+        .smallerLogo{
+            
+            height: 1rem;
+            
+        }
+        
+        .navMainContainer{
+            
+            overflow: hidden;
+            
+        }
+    
+}
+
+
     
     

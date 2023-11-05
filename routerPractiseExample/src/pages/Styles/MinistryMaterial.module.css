@@ -1,14 +1,28 @@
 
 /* 
 
+Okay so the plan for now is to Finish up the Appearance of the track. 
+
+Once that is done I can add in the Icons and work on the styling and spacing a bit. 
+
+
+Once that is done I can add in the functionality bit by bit into the audio player. 
+
+First I can Add in all the necessary functions into the Ministry Material File. 
+
+Then I can add in the parts of the JSX code that create and represent different elements of the audio player. 
+
+Once that is done I can add in the CSS styling for each element that has been placed into the Ministry Material 
+JSX. 
+
+Once that is done I can improve the styling and then get the functionality working. 
+
+
+Okay so let's work out
 
 
 
 */
-
-
-
-
 
 
 *, *::after, *::before{
@@ -91,6 +105,7 @@ background-color: #444;
 .heroContainer{
     
     
+    position: relative; 
     
     
 }
@@ -99,6 +114,9 @@ background-color: #444;
 
 
 .heroTextContainer{
+
+
+/* position: relative; */
 
 
     
@@ -110,9 +128,14 @@ background-color: #444;
 
 .heroText{
 
+
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);   
+    
     
 }
-
 
 
 .imageContainer{
@@ -128,8 +151,7 @@ background-color: #444;
 
 .heroImage{
 
-    
-    
+    margin-top: -2.4vh; 
     
 }
 
@@ -137,9 +159,13 @@ background-color: #444;
 .audioPlayerContainer{
     
     
-    
-    
-    
+    width: 100vw; 
+    margin: 0 auto; 
+    background-color: #444;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr;
+        
 }
 
 
@@ -147,15 +173,35 @@ background-color: #444;
 .controlsContainer{
 
     
+    background-color: blue; 
+    min-height: 40vh;
+    display: grid;
+    place-content: center;
+    position: relative; 
+    
+}
+
+.controlWrapper{
+    
+
+    
+    display: none;
+    
 }
 
 
-
-
-
-.playButton{
+.playButtonContainer{
 
     
+    min-height: 10vh; 
+    /* background-color: orange;  */
+    width: auto; 
+    margin: 0 auto; 
+    display: inline;
+    position: absolute; 
+    top: 80%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
     
     
     
@@ -173,154 +219,381 @@ background-color: #444;
 
 
 .headerContainer{
+    
+    margin-bottom: 2rem; 
+    margin-top: 0.5rem; 
 
-    
-    
-    
-    
 }
 
 
 .controlHeader{
 
     
+    font-size: 3rem;
+    font-weight: 100;
     
 }
-
-
-
-.controlText{
-
-    
-}
-
-
 
 
 .trackSectionContainer{
+    
+ 
+   position: relative; 
+    width: 100vw; 
+    
+}
+.trackListContainer{
+    
+    
+    width: 70vw; 
+    margin: 0 auto; 
+    padding: 1.5rem; 
+    min-height: 60vh;
+    
+    
+    
+}
+
+
+.trackItemContainer{
+
+    min-height: 10vh;
+    width: 85%; 
+    
+    margin: 1rem auto; 
+    
+    border-bottom: 2px solid rgb(48, 45, 45);
+    
+    
+
+    
+}
+
+
+.titleContainer{
+    
+    display: inline;
+    
+}
+
+
+.trackItemTitle{
+
+
+    display: flex;
+    justify-content: baseline;
+    
+    
+}
+
+.spacerSpan{
+    margin-left: 0.45rem; 
+    
+}
+
+
+
+.trackItemDurationContainer{
+
+    width: 100%; 
+
+}
+
+
+
+.trackDuration{
+
+    display: inline-block; 
+    margin-left: 50vw; 
+
+}
+
+
+
+.trackAuthorContainer{
+    
+}
+
+
+.trackAuthor{
+    
+}
+
+
+.userControlsContainer{
+    
+
+    width: 10rem; 
+    margin: 1rem auto; 
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    
+}
+
+
+
+.playButtonContainer{
+
+    
+    color: black;  
+    
+    position: absolute; 
+    bottom: 0; 
+  
+    margin-top: -0.29rem !important; 
+    
+    
+}
+
+
+
+.playButtonContainer{
 
     
     
     
 }
 
+
+.previousTrackContainer{
+
+    
+    
+}
+
+
+.previousTrack{
+
+    font-size: clamp(1rem, 7vw + 1rem, 3rem);
+    color: black; 
+    
+    
+    position: absolute;
+    
+    
+    
+}
+
+
+.nextTrackContainer{
+
+    color: black; 
+    
+    
+}
+
+
+.nextTrack{
+
+    font-size: 3rem; 
+    display: inline-block; 
+    position: absolute;
+    right: 0; 
+    top: 0; 
+    
+    
+}
+
+
+    /* min-height: 0vh; */
+.footerContainer{
+
+    
+    
+}
 
 
 
 .trackContainer{
     
     
+    /* background-color: blue;  */
+    
+    width: 80vw; 
+    margin: 0 auto; 
+    /* min-height: 30vh; */
+    
+    
+
+}
+
+
+.progressContainer{
+    
+
+  
+    min-height: 30vh;
+        
+        
+}
+
+
+.trackProgress{
+    
+    color: black; 
+
+    /* margin: 0 auto;  */
+    
+    width: 60vw !important; 
+    margin: 0 auto; 
+    margin-left: 12%; 
+    
+    
+    
+}
+
+.trackProgressBarContainer{
+
+
+cursor: pointer;  
+width: 100vw; 
+
+
+margin: 0 auto; 
+display: grid;
+place-content: center;
+
+
+    
+}
+
+.trackBarContainer{
+    
+    position: relative; 
+    width: clamp(2rem, 40vw + 1rem, 99rem);
+    
+    min-height: 5px;
+    cursor: pointer;
+    
+    
+    
+}
+
+
+.trackBar{
+
     
     
 }
 
 
 
+.titleContainer{
+    
+    display: inline-block;
+    
+}
 
+.trackTitle{
+    
+    margin-top: 1rem; 
+    margin-bottom: 0.3rem; 
+    
+}
 
 
 
 
+.footerContainer{
+    
+    margin-top: 3.5rem; 
+    
+}
 
 
+.trackLengthContainer{
+    
+    
+    /* display: inline-block; */
+    /* background-coloor: orange;  */
 
+}
 
+.authorContainer{
+    
+}
 
 
 
+.trackLengthSpacer{
+    
+   
+    background-color: lime; 
 
+}
 
 
 
+.playButtonContainer{
+    
+    font-size: 4.5rem; 
+    width: auto; 
+    margin: 3 auto; 
+    /* margin-bottom: 100rem !important; */
+    margin-top: 0.1rem !important; 
+    
+    
+    
+}
 
 
+/* Add in the media queries here  */
 
+@media(max-width: 780px){
+    
+    .heroImage{
+        
+        
+        margin-top: -3vh; 
+        
+    }
+    
+}
 
 
+@media(max-width: 600px){
+    
+    .heroImage{
+        
+        margin-top: -7.9vh; 
+        
+        
+        
+    }
+    
+}
 
 
 
+@media(max-width: 550px){
 
+    .heroImage{
+        
+        
+        margin-top: -8.6vh; 
+        
+        
+    }
 
+    
 
+}
 
 
+/* Add in the container queries here  */
 
 
 
 
 
+/* Add in the Effects here  */
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Add in the Animations here  */
 
 
 

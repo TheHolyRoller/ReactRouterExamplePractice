@@ -1,0 +1,321 @@
+
+
+/*  */
+
+
+
+*, *::after, *::before{
+    
+    
+    padding: 0; 
+    margin: 0; 
+    
+    box-sizing: border-box; 
+    
+    /* Add in the outline here  */
+    
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    
+    
+}
+
+:root{
+    
+    /* Add in the root variables here  */
+    
+}
+
+body{
+    
+    
+    width: 100vw; 
+    min-height: 100vh;
+    position: relative; 
+    
+    padding: 0px; 
+    margin: 0px; 
+    
+    /* background: linear-gradient(#444, #888, #222);;  */
+    
+    
+}
+
+
+/* Add in the main container here  */
+
+
+.mainContainer{
+
+    
+    
+}
+
+
+.contentContainer{
+
+    
+    
+    
+}
+
+.heroImage{
+
+    width: 100vw; 
+    min-height: 50vh;
+    
+    position: relative; 
+    margin-top: -2.3vh; 
+    
+}
+
+
+
+
+.heroTextContainer{
+    
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    
+}
+
+
+
+
+.heroText{
+
+    
+    
+    
+}
+
+
+.heroImageScr{
+
+    
+    
+    
+}
+
+
+
+.paragraphContainer{
+    
+    min-height: 10vh;
+    width: 55vw; 
+    margin: 0 auto; 
+    padding-top: 3rem; 
+    
+}
+
+
+.giveParagraph{
+
+    margin: 3rem auto; 
+    
+}
+
+
+
+.giveSectionContainer{
+
+    min-height: 60vh;
+    width: 50vw; 
+    margin: 3rem auto; 
+    
+    display: grid;
+    place-content: center; 
+    position: relative;
+    z-index: 200000;  
+    
+}
+
+
+
+.giveSectionHolder{
+
+
+min-height: 33vh;
+background-color: blue; 
+/* width: 50%;  */
+margin: 0 auto; 
+
+position: relative; 
+z-index: 2000;
+
+
+/* outline: 5px solid lime;  */
+
+    
+}
+
+
+.footerContainer{
+
+    
+    
+}
+
+
+
+
+
+/* Add in the media queries here  */
+
+@media(max-width: 780px){
+    
+    .heroImage{
+        
+        
+        margin-top: -3vh; 
+        
+    }
+    
+}
+
+
+@media(max-width: 600px){
+    
+    .heroImage{
+        
+        margin-top: -7.9vh; 
+        
+        
+        
+    }
+    
+}
+
+
+
+@media(max-width: 550px){
+
+    .heroImage{
+        
+        
+        margin-top: -8.6vh; 
+        
+        
+    }
+
+    
+
+}
+
+
+/* Add in the container queries here  */
+
+
+
+/* Add in the Effects here  */
+
+
+
+/* Add in the animations here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

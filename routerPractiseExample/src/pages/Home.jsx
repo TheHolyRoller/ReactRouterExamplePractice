@@ -3,16 +3,31 @@
 
 // import the image here 
 
-
 import  '../pages/Styles/Home.css'; 
 
 import { Outlet, NavLink, ScrollRestoration } from "react-router-dom"
 import React from 'react'; 
 
-import Footer from '../pages/Navigation/Footer'; 
+// import Footer from '../pages/Navigation/Footer'; 
+import Moon from '../assets/Moon.jpg'; 
+
+
 
 import CardRender from './Cards/CardRender';
 import TabletCards from './Cards/TabletCards';
+import CTA from '../pages/CTA'; 
+
+
+
+
+
+import SignUpFooter from '../Components/SignUpFooter'; 
+
+import Footer from '../pages/Navigation/Footer'; 
+
+
+
+import CarouselComponent from './CarouselComponent';
 
 
 export default function Home() {
@@ -20,48 +35,57 @@ export default function Home() {
       <div className="home">
         
         
-        <div className="homeImageContainer">
+        <div className="heroImage">
+    
+    <div className="heroTextContainer">
+    
+    <div className="heroText">
+      Hero Text 
+    
+    </div>
+    </div>
+    
+    
+    <img className="heroImageScr"  src={Moon}></img>
+      
+    </div>
+        <div className='extraParagraphContainer'>
           
-          
-          
-          <p className="homeImageText" >
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis excepturi laborum magnam aperiam tenetur, sapiente nemo ducimus quod vero temporibus!
-          </p>          
+          <h1  className="extraParagraph" >
+            
+          Fulfilling the Great Commission through fervent prayer, passionate worship and dedication to helping people fulfill their God-given destinies            
+            
+          </h1>
           
           
         </div>
-        <div className="homeParagraphContainer">
         
-        {/* <p className="homeParagraph" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni similique odio velit ea, dignissimos aspernatur iste beatae cumque non iusto.</p> */}
-      
-      
-        </div>
-        
-        
-        {/* Add in the line container here  */}
         <div className="homeLineContainer">
          
           
           <div className="homeLine">
-         
-         
             
           </div>
           </div>
         
         
-        
-        {/* Add in the Cards container here  */}
-        <div className="homeCardsPositionalContainer">
         <div className="homeCardsContainer">
-        
-        <TabletCards/>
-        {/* <CardRender/> */}
+          <TabletCards/>
         
         </div>
+        
+        <div className="homeCTAPositionalContainer">
+        <div className="homeCTAContainer">
+        
+        <CTA/>
+        
         </div>
         
-        <Footer/>
+        </div>
+        
+        <div className="footerContainer">
+
+        </div>
       </div>
     );
     

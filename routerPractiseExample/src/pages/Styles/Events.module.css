@@ -1,0 +1,435 @@
+
+
+/* 
+
+
+
+
+*/
+
+
+
+*, *::after, *::before{
+
+
+ padding: 0; 
+ margin: 0; 
+ box-sizing: border-box;
+ 
+ 
+ 
+ /* Add in the outlines here  */
+
+    
+    
+}
+
+
+
+html{
+
+    scroll-behavior: smooth;
+    
+}
+
+
+:root{
+
+     
+/* Add in the root variables here  */
+    
+    
+    
+}
+
+
+body{
+
+
+width: 100vw; 
+min-height: 100vh;
+position: relative;
+
+padding: 0px; 
+margin: 0px; 
+
+background-color: #444;
+
+/* Add in the font family here  */
+    
+}
+
+
+/* Add in the main container here  */
+
+
+.mainContainer{
+
+width: 100vw; 
+min-height: 100vh;
+position: relative; 
+
+display: grid;
+place-content: center;
+    
+    
+}
+
+
+
+.contentContainer{
+
+    
+    
+    
+}
+
+.heroContainer{
+
+    position: relative;
+    
+    
+}
+
+
+.heroTextContainer{
+
+    width: 100vw; 
+    
+}
+
+
+
+.heroText{
+
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+.heroImageContainer{
+
+    
+}
+
+
+
+.heroImage{
+
+   margin-top: -2.2vh; 
+   
+    
+    
+}
+
+
+
+.pageContentContainer{
+
+    display: grid;
+    width: clamp(12rem, 80vw + 1rem, 99rem); 
+    place-content: center;
+
+    /* background-color: purple;  */
+    overflow: hidden;
+    min-height: 45vh;
+    margin: 0 auto; 
+    
+}
+
+
+
+.rowSectionTitleContainer{
+    
+}
+
+
+.rowSectionTitle{
+    
+    
+}
+
+
+.rowPositionalcontainer{
+    
+  width: 100vw; 
+  
+  position: relative;
+  display: grid;
+
+place-content: center;
+
+/* background-color: blue;  */
+margin: 11.5rem auto; 
+
+    
+    
+}
+
+
+.rowContainer{
+
+    display: grid;
+    place-content: center;
+    
+    grid-template-columns: 1fr 3fr; 
+    gap: 3rem; 
+    width: 80vw; 
+    
+    
+    
+    
+    margin: 0 auto; 
+    /* background-color: blue;  */
+
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+    
+    
+}
+
+
+
+.imageSectionContainer{
+
+    
+    width: auto; 
+    margin: 0 auto; 
+    
+    
+}
+
+
+
+
+
+
+
+.detailTagContainer{
+
+    width: auto; 
+    margin: 0 auto; 
+    position: relative;
+    
+    
+}
+
+
+
+.detailTag{
+
+    
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    
+    
+}
+
+
+
+
+.imageContainer{
+
+    
+}
+
+
+
+.rowImage{  
+    background-image: url("https://images.unsplash.com/photo-1680562727022-158f17391a9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60");
+    
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    
+    min-height: 18rem;
+    width: clamp(12rem, 22vw + 1rem, 35rem);
+    /* aspect-ratio: 1 / 1; */
+    
+}
+
+
+
+.rowTextSectionContainer{
+
+    
+    /* width: 100%;  */
+    /* background-color: red;  */
+    
+    
+}
+
+
+
+
+.rowTextTitleContainer{
+
+    margin-bottom: 1rem;
+    
+    
+}
+
+
+
+.rowTextTitle{
+
+    font-size: clamp(1rem, 2vw + 1rem, 9rem);
+    
+    
+    
+}
+
+
+.detailsContainer{
+
+    margin: 1rem auto; 
+    
+    
+}
+
+
+
+.rowDetails{
+
+    
+    
+}
+
+
+
+.descriptionContainer{
+
+    margin-top: 2rem; 
+    
+}
+
+
+
+
+.rowDescription{
+
+    
+    
+}
+
+
+
+
+.footerContainer{
+
+    margin-top: 3rem; 
+    
+    
+    
+}
+
+
+/* Add in the media queries here  */
+@media (max-width: 800px){
+
+    .rowContainer{
+        
+        grid-template-columns: 1fr;
+
+    }
+    
+    
+    .rowPositionalcontainer{
+        
+        margin: 20rem auto; 
+    }
+    
+    
+    /* select the image here  */
+    .rowImage{
+        
+        width: clamp(12rem, 90vw + 1rem, 99rem); 
+
+    }
+    
+    .rowTextSectionContainer{
+        
+        width: 80vw; 
+        margin: 0 auto; 
+        
+    }
+}
+
+
+
+
+@media(max-width: 780px){
+    
+    .heroImage{
+        
+        
+        margin-top: -3vh; 
+        
+    }
+    
+}
+
+
+@media(max-width: 600px){
+    
+    .heroImage{
+        
+        margin-top: -7.9vh; 
+        
+        
+        
+    }
+    
+}
+
+
+
+@media(max-width: 550px){
+
+    .heroImage{
+        
+        margin-top: -8.6vh; 
+
+    }
+
+    
+
+}
+
+/* Add in the container queries here  */
+
+
+
+/* Add in the effects here  */
+
+
+
+/* Add in the animations here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,37 +1,72 @@
 import React from 'react'
 
-/**
- * 
-Okay so let's work out how I'm going to do this. 
+import Moon from '../assets/Moon.jpg'; 
 
-First of all We need the Hero image with the text and this must be different with custom 
-dimensions for every page. 
+import SignUpFooter from '../Components/SignUpFooter';
 
-
-Next we need this image to go right below the navbar and it will also need to be responsive. 
-
-Okay The thing is that where Outlet has been placed to render the child components is a good way down from 
-the navbar. 
-
-This could be where Outlet has been placed or it could be because of styling or a few other issues. 
-
-
- 
- 
- 
- 
- */
-
-
-
-
-
+// Import the stylesheet here 
+import G from '../pages/Styles/Give.module.css'; 
+import Footer from '../pages/Navigation/Footer'; 
+// import Payment from '../Components/Payment'; 
+import Payment from '../Components/Payment';
 
 function Give() {
   return (
-    <div>
-      Give 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aliquid cum non laboriosam minima, sunt, ad atque at, quod consequuntur ullam nesciunt corporis. Nemo recusandae, aliquam ad aut error consequuntur pariatur suscipit optio exercitationem tenetur nobis iste aperiam nostrum doloremque fuga. Ullam itaque provident et voluptates delectus expedita voluptatum sed perspiciatis vitae consectetur nesciunt sapiente mollitia veritatis, iste rerum harum aliquam, facilis earum. Cupiditate, quas nihil quibusdam blanditiis at, iure consequatur autem a exercitationem omnis quia veniam voluptatibus possimus minus quod ratione quaerat aliquam modi deleniti placeat dolorem assumenda? Dignissimos fugiat neque veniam nam molestiae magni error numquam, pariatur aliquam!</p>
+    <div className={G.mainContainer}>
+    
+    <div className={G.contentContainer}>
+      
+      {/* Add in the Hero Section container here  */}
+      
+      <div className={G.heroImage}>
+    
+    <div className={G.heroTextContainer}>
+    
+    <div className={G.heroText}>
+      Hero Text 
+    
+    </div>
+    </div>
+    
+    <img className={G.heroImageScr}  src={Moon}></img>
+      
+    </div>
+      
+      
+      {/* Add in the paragraph container here  */}
+      
+      <div className={G.paragraphContainer}>
+
+        {/* Add in the paragraph here  */}
+        <p className={G.giveParagraph} >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illum, omnis nulla sequi repellendus eum earum tempora quas, eaque est officiis quos magnam voluptas aliquam ipsum fugit temporibus expedita eligendi?
+          
+        </p>
+        
+      </div>
+      
+      {/* Add in the give button container here  */}
+      <section className={G.giveSectionContainer} >
+      
+      {/* Add in the Give Component here  */}
+      <div className={G.giveSectionHolder}>
+        <Payment/>
+      </div>
+        
+      </section>
+      
+      
+      {/* Add in the footer container here  */}
+      <div className={G.footerContainer}>
+        
+        {/* <Footer/> */}
+        
+      </div>
+      
+      
+    </div>
+    
+
     </div>
   ); 
 }

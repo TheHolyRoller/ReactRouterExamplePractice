@@ -1,0 +1,498 @@
+
+/* Import the font family here  */
+
+:root{
+
+ 
+    
+}
+
+*{
+padding:0; 
+margin: 0; 
+box-sizing: border-box;
+
+
+
+}
+
+
+body{
+
+    width: 100vw;
+    overflow: scroll;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+    
+}
+
+
+
+.contentContainer{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-content: center;
+    gap: 2vmin !important;
+    
+    /* overflow: scroll;  */
+    /* width: 100vw !important; */
+    margin: 0 auto; 
+    
+    padding-bottom: 4rem !important; 
+    
+    
+    
+    
+    
+    background-color: #1e1c1c;
+    color: #444; 
+    
+outline: 4px solid lime; 
+    
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    
+    
+    padding-bottom: 4rem; 
+    
+    
+    border-bottom: 2px solid rgb(63, 59, 59);
+    margin-bottom: 2rem; 
+    
+    
+    
+}
+
+/* Add in the footer section here make sure that it won't clash with other rule-sets  */
+
+.footer{
+    
+    
+    min-width: 100vw; 
+    margin: 0;
+    
+    color: #444; 
+   
+    
+    
+
+    }
+
+.logoContainer{
+
+    display: flex;
+    width: 100%;
+    color: #444; 
+    
+    
+}
+
+.logo{
+
+    width: 100%; 
+    display: flex;
+    color: #444; 
+    
+    
+    
+}
+
+
+.socialMediaListContainer{
+    
+    display: grid;
+    justify-content: center;
+    color: #444; 
+    
+}
+
+
+
+.list{
+
+    min-height: 50px;
+    text-align: justify;
+    position: relative;
+
+    
+}
+
+
+
+.signUpContainer{
+    
+    width: 100%; 
+    margin: 0 auto; 
+    display: grid;
+    place-content: center;
+
+    min-height: 10vh; 
+    
+color: #444; 
+    
+}
+
+
+
+input {
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 5px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+width: 12rem; 
+min-height: 2rem;
+
+    
+    
+}
+
+
+.listContainer{
+
+    
+    
+    
+}
+
+
+
+
+.textContainer{
+
+    width: 100%; 
+    display: grid;  
+    place-content: center;
+    
+    color: #444; 
+
+    margin-top: 2rem; 
+    
+    
+}
+
+
+.signUpText{
+
+    width: 100%; 
+    text-align: left;
+    
+}
+
+
+
+.headlineContainer{
+    
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+    color: #444; 
+    margin: 0 auto;
+    
+}
+
+.headline{
+    
+    width: auto; 
+    margin: 0 auto; 
+    
+}
+
+.listContainer{
+    
+    display: grid;
+    place-content: center;
+    margin-left: 15%; 
+    
+}
+
+
+.socialMediaListItem{
+    
+    margin-right: 1rem; 
+    
+}
+
+
+/* Find out why this is not working  */
+.socialMediaListItem li {
+
+    display: inline; 
+    
+}
+
+
+.socialMediaList li {
+
+    float: left; 
+    overflow: hidden;
+    
+
+}
+
+.socialMediaSection{
+
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 2.6%; 
+        
+}
+
+
+.socialMediaList{
+    
+    display: inline;
+    
+    }
+    
+    
+    
+    .hoverEffectParentContainer{
+    
+
+        width: 9rem; 
+        height: 5.2rem;
+        
+    }
+    
+   
+
+    .hoverEffectContainer{
+    
+       width: 100%; 
+       height: 100%; 
+       
+        padding-left: 5%; 
+        padding-right: 5%; 
+        
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+.socialMediaLink{
+
+        width: 2rem; 
+        height: 2rem; 
+        margin-right: 1rem; 
+        margin-top: 1rem; 
+        color: black    
+        
+        
+}
+
+.socialMediaLink{
+
+  
+    margin-top: 1rem; 
+    width: 2rem; 
+    height: 2rem; 
+    color: black;
+    
+}
+
+.socialMediaLink:hover{
+
+   opacity: 1 !important;  
+   color: black !important;
+   transform: scale(1.07);
+   transform: translateY(2deg);
+   
+}
+    
+    
+    #contactListItem:hover > #anchorTag{
+        
+        color: black;
+    }
+    
+    #anchorTag:hover{
+        color: black; 
+    }
+    
+    #contactListItem:hover{
+    
+        color: black;
+
+    }
+    
+    #strongTag:hover{
+        
+        color: black;
+        
+        
+    }
+    
+
+    
+    
+    #routerLink:hover{
+        
+        color: black;
+        
+
+    }
+    
+    @media (max-width: 1290px){
+        .contentContainer{
+            
+            margin: 0 auto; 
+
+        }
+    }
+    
+    @media (max-width: 1100px){
+     .contentContainer{
+        
+        
+        display: flex;
+        justify-items: space-around;
+        margin: 0 auto; 
+        width: auto; 
+
+
+        
+        
+     }   
+        
+        .list{
+            
+            /* margin-right: 16vw;  */
+            margin-left: 11vw; 
+            
+            
+        }
+        
+        
+    }
+    
+    @media (max-width: 950px){
+        .list{
+            /* margin-right: 10vw;  */
+            
+        }
+        
+        
+        .listContainer{
+            margin: 0 auto; 
+            
+            
+            
+            
+        }
+        
+        .contentContainer{
+            
+            /* width: 90vw;  */
+            
+            
+            
+            
+            
+        }
+        
+        .Contactsection{
+            margin-top: 2.2rem; 
+            margin-bottom: 2.2rem; 
+            
+            
+        }
+        
+    }
+
+
+@media (max-width: 780px){
+    
+    .contentContainer{
+        display: grid;
+        
+         gap: 2rem; 
+        grid-template-columns: repeat(1, 1fr);
+        overflow: scroll;
+        grid-template-rows: repeat(3, 2fr, 1fr, 2fr);
+        
+    }
+    
+
+    .contentContainer{
+    
+        padding-bottom: 3%; 
+        
+    }
+    
+    .socialMediaSection{
+    
+        margin-bottom: 6.9%; 
+
+    }
+    .list{
+    
+        /* margin: 0;  */
+        margin-left: 0.5vw; 
+        
+    }
+    
+    .headlineContainer{
+        
+        display: grid;
+        margin-left: -3rem; 
+        
+        
+    }
+}
+
+
+
+@media (orientation: landscape){
+    
+    
+    
+    .footer{
+        
+        /* margin-top: 19rem !important; */
+        
+        
+        
+        
+        
+    }
+    
+    .contentContainer{
+        width: 99vw; 
+
+        
+    }
+    
+    .SignUpsection{
+        
+        /* margin-left: -3rem;  */
+        
+        
+    }
+    
+    .Contactsection{
+    
+        
+        
+    }
+    
+    
+    .Logosection{
+
+        
+        
+        
+    }
+    
+    
+}

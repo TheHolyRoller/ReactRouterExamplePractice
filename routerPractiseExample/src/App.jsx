@@ -9,11 +9,17 @@ import {
 import Home from './pages/Home'
 import About from './pages/About'
 import Faq from './pages/help/Faq'
-import Contact, { contactAction } from './pages/help/Contact'
+// import Contact, { contactAction } from './pages/help/Contact'
 import NotFound from './pages/help/NotFound';
 import Careers, { careersLoader } from './pages/careers/careers'
 import CareerDetails, { careerDetailsLoader } from "./pages/careers/CareerDetails"
 import CareersError from './pages/careers/CareersError'
+import Contact from './pages/Contact';
+
+import Belief from './pages/Belief';
+import Blog from './pages/Blog';
+import Events from './pages/Events';
+
 
 
 import Info from './pages/Info'; 
@@ -22,30 +28,42 @@ import Testimonies from './pages/Testimonies';
 import Give from './pages/Give'; 
 import Ministry from './pages/Ministry';
 import MinistryMaterial from './pages/MinistryMaterial';
-
+  
   
 
 // layouts
-import RootLayout from './layouts/RootLayout';
+// import RootLayout from './layouts/RootLayout';
+import RootLayout from './Layouts/RootLayout';
+
 
 import HamburgerNav from './pages/Navigation/HamburgerNav'; 
 import HelpLayout from './layouts/HelpLayout'
 import CareersLayout from './layouts/CareersLayout'
 
+
+
 const router = createBrowserRouter(
   
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
+  
+    <Route  path="/" element={<RootLayout />}>
       
       <Route index element={<Home />} />  
       <Route path="about" element={<About />} />
       <Route path='give' element={<Give/>}/>
       <Route path='testimonies' element={<Testimonies/>}/>
+      <Route path='blog' element={<Blog/>}/>
+      <Route path='events' element={<Events/>}/>
+      <Route path='belief' element={<Belief/>}/>
+      <Route path='contact' element={<Contact/>}/>
+      
+      
+      
       <Route path='ministrymaterial' element={<MinistryMaterial/>}/>
       <Route path='ministry' element={<Ministry/>}/>
       <Route path="help" element={<HelpLayout />}>
         <Route path="faq" element={<Faq />} />
-        <Route path="contact" element={<Contact/>} action={contactAction} />
+        {/* <Route path="contact" element={<Contact/>} action={contactAction} /> */}
       </Route>
       <Route path="careers" element={<CareersLayout />} errorElement={<CareersError />}>
         <Route  
@@ -61,14 +79,17 @@ const router = createBrowserRouter(
         />
       </Route>
 
+      <Route path="/contact" element={<HamburgerNav/>}></Route>
       <Route path="*" element={<NotFound />} />
     </Route>
   )
-)
+  )
 
 function App() {
   return (
+  <>
     <RouterProvider router={router} />
+  </>
   );
 }
 

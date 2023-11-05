@@ -10,6 +10,9 @@
         
         box-sizing: border-box;
         
+        /* outline: 4px solid lime;  */
+        
+        
     }
 
 
@@ -39,7 +42,9 @@
         margin: 0px; 
         
         width: 100vw; 
-        min-height: 100vh;
+        /* min-height: 100vh; */
+        /* height: 40vh;  */
+        
         position: relative; 
         
         background-color: #444; 
@@ -51,41 +56,56 @@
     .positionalContainer{
         
         width: 100vw; 
-        min-height: 100vh;
-        position: relative; 
-        
-        display: grid;
-        justify-content: center;
-        align-content: center;
+        /* min-height: 100vh; */
+        /* position: relative;  */
+            
+            
         
     }
 
+    /* Workout why the height is so much */
     .mainContainer{
-        
-        background-color: navy;
             
-        width: clamp(12rem, 86vw + 1rem, 99rem); 
+        width: clamp(12rem, 90vw + 1rem, 99rem) !important; 
         
-        margin: 1rem clamp(1rem, 8vw + 1rem, 44rem); 
-        position: relative; 
+        overflow: hidden;
         
+       
+        
+    
     
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: 0 auto; 
         place-content: center;
+        vertical-align: top;
+        background-color: black; 
+        
+      
+        
         
             
+            
     }
+    
+    .holderContainer{
+        
+       width: auto; 
+       
+       margin: 3rem auto; 
+       position: inherit;
+       z-index: 3;  
+    }
+    
     
     
     .carouselContainer{
         
         background-color: aliceblue;
     
-        display: grid;
-        align-content: center;
+
         position: relative; 
+        object-fit: cover;
         
         
         padding-top: 0.3rem; 
@@ -93,8 +113,14 @@
         padding-left: 0.1rem; 
         padding-right: 0.1rem;
         
-        /* width: clamp(12rem, 34vw + 1rem, 99rem); */
-
+        width: clamp(23rem, 36vw + 1rem, 99rem);
+        
+        vertical-align: top;
+        /* margin-top: -4rem;  */
+        top: -100px; 
+        margin-top: -100px; 
+        
+        
     }
 
 
@@ -102,18 +128,21 @@
 
             background-color: #444;
             
-        min-height: 55vh;
-        
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+            min-height: 55vh;
+
+          
+            display: inline-block;
+            vertical-align: top;
+            
+            object-fit: cover;
             
     }
     
 
-    .centeringContainer{
-        
-        display: grid;
-        justify-content: center;
-        
-    }
 
 
     .navigationalPositionalDotsContainer{
@@ -133,26 +162,23 @@
     
     background-color: white; 
     
-    /* width: auto;  */
-    margin: 0 auto; 
-    display: grid;
-    place-content: center;
+    /* display: grid; */
+    /* place-content: center; */
+    /* display: inline; */
     
-
+    
+    /* top: -100px;  */
+    /* margin-top: -100px;  */
     
 }
 
 .textSection{
     
-    display: grid;
-    place-content: center;
+    /* display: grid; */
+    /* place-content: center; */
+    /* top: -100px;  */
+    /* margin-top: -100px;  */
     
-    
-}
-
-.headingContainer{
-    
-    margin-top: 0.7rem; 
     
 }
 
@@ -174,21 +200,12 @@ border-color: #CF6A14;
 border-radius: 14px 14px 14px 14px;
 padding: 14px 40px 14px 40px;
     
-
-    
-    
 }
 
-.imageSliderButton{
-    
-    
-    
-}
 
 .imageSliderButtonSpan{
     
     margin-right: 7px; 
-    
     
 }
 
@@ -197,8 +214,7 @@ padding: 14px 40px 14px 40px;
 .SVGContainer{
     
     display: grid;
-    /* place-content: center; */
-    align-content: center; 
+    /* align-content: center;  */
     
     min-height: 3rem;
     background-color: brown;
@@ -218,26 +234,46 @@ padding: 14px 40px 14px 40px;
     
     .mainContainer{
         
-        /* Reduce the margin clamp here  */
-        /* margin: 1rem clamp(1rem, 1vw + 1rem, 44rem);  */
-        width: clamp(12rem, 95vw + 1rem, 99rem); 
+        width: clamp(12rem, 9vw + 1rem, 99rem) ; 
         
-        margin-left: 1.4%
+        margin-left: 4.4% !important;
+        display: grid;
+
+        
         
         
     }
     
     .textSection{
         
-        width: clamp(12rem, 45vw + 1rem, 99rem); 
+        width: clamp(12rem, 42vw + 1rem, 99rem); 
         background-color: orange; 
+        margin: 0 auto !important; 
+        
                     
                     
     }
     .imageContainer{
     
-        width: clamp(12rem, 40vw + 1rem, 99rem) !important; 
-        margin-left: 3%; 
+        width: clamp(12rem, 38vw + 1rem, 99rem) !important; 
+        margin: 0 auto; 
+    }
+    
+}
+
+@media (max-width: 1100px){
+    
+    .mainContainer{
+    
+    
+        margin: 0 auto !important; 
+        
+    }
+    
+    
+    .carouselContainer{
+        
+        margin: 0 auto !important; 
         
     }
     
@@ -245,8 +281,6 @@ padding: 14px 40px 14px 40px;
 
 
 @media(max-width: 900px){
-    
-    /*  */
     
     
 }
@@ -274,21 +308,21 @@ padding: 14px 40px 14px 40px;
 
     .mainContainer{
         
-        grid-template-columns: 1fr;
-        width: clamp(20rem, 92vw + 1rem, 90rem); 
+        grid-template-columns: 1fr !important;
+        width: clamp(20rem, 99vw + 1rem, 90rem) !important; 
         padding: 0; 
         margin: 0 auto; 
         
         
     }
     
-    /* Add in the Image container here  */
-    
+
     .imageContainer{
         
-        /* Add in the Aspect Ratio here  */
         width: clamp(12rem, 90vw + 1rem, 99rem) !important; 
         margin: 0 auto !important; 
+        height: auto !important;
+        
         
         
     }
@@ -299,7 +333,7 @@ padding: 14px 40px 14px 40px;
         padding: 0.3rem 0.2rem; 
         width: clamp(12rem, 93vw + 1rem, 99rem); 
         min-width: 100%;
-        
+        vertical-align: top;
         
     }
     

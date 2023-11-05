@@ -1,0 +1,395 @@
+
+
+
+/* 
+
+
+
+
+*/
+
+
+*, *::after, *::backdrop, *::before{
+
+        
+   padding: 0; 
+   margin: 0; 
+   box-sizing: border-box;
+   
+   /* Add in the outline and the background color here  */
+   
+    
+}
+
+
+html{
+    
+
+    scroll-behavior: smooth;
+    
+}
+
+:root{
+
+    /* Add in the root variables here  */
+    
+    
+}
+
+
+body{
+
+
+width: 100vw; 
+min-height: 100vh;
+position: relative;
+
+background-color: #444;
+
+/* Add in the font family here  */
+    
+    
+}
+
+/* Add in the main container here  */
+.mainContainer{
+
+    width: 100vw; 
+    min-height: 100vh;
+    position: relative;
+    
+    
+    
+    
+}
+
+
+.contentContainer{
+
+    
+    
+}
+
+
+.heroContainer{
+
+    /* width: 100vw;  */
+    position: relative;
+    
+    
+}
+
+
+.heroTextContainer{
+    
+    position: absolute; 
+    
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    
+    
+    
+}
+
+
+.heroText{
+
+    
+    
+}
+
+
+
+.heroTextHeader{
+
+    
+    
+}
+
+
+.heroImageContainer{
+    
+    
+    
+}
+
+
+.heroImage{
+
+    
+    background-image: url("https://images.unsplash.com/photo-1680345773499-55c1f1c70f0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    width: 100vw; 
+    min-height: 70vh;
+    margin-top: 5rem; 
+    
+}
+
+
+
+
+.pageContentContainer{
+
+    
+    width: clamp(12rem, 70vw + 1rem, 99rem); 
+    margin: 0 auto; 
+
+    
+}
+
+
+
+.pageMainTitleContainer{
+
+    background-color: blue; 
+    
+    display: grid;
+    place-content: center;
+    width: auto; 
+    margin: 2.5rem auto; 
+    
+    
+}
+
+
+
+
+
+.pageMainTitle{
+
+
+    
+    
+}
+
+
+.pageInstructionsContainer{
+
+    background-color: blue; 
+    
+    display: grid;
+    place-content: center;
+    margin-bottom: 2.5rem; 
+    
+}
+
+
+.pageInstructions{
+
+    
+    
+}
+
+
+
+
+
+.gridTitleContainer{
+
+    background-color: blue; 
+    
+    display: grid;
+    place-content: center;
+    /* margin-bottom: 2.5rem;  */
+    
+    
+    
+    
+}
+
+
+
+
+.gridTitle{
+    
+    
+    
+}
+
+
+
+.gridContainer{
+
+    
+    width: clamp(12rem, 45vw + 1rem, 99rem); 
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+        
+        
+}
+
+
+.gridColumn{
+
+    
+    
+}
+
+
+
+.downloadList{
+
+    
+    
+}
+
+
+
+
+.downloadItem{
+
+    width: auto; 
+    
+    margin: 2rem auto; 
+    
+    
+}
+
+
+
+.downloadItem{
+
+    
+    
+    
+    
+}
+
+
+
+.downloadItem{
+
+    
+    
+}
+
+
+
+
+.downloadItem{
+
+    
+    
+}
+
+
+
+.downloadItem{
+
+    
+    
+}
+
+
+
+.footerContainer{
+
+    margin-top: 2rem; 
+    
+}
+
+
+
+
+/* Add in the media queries here  */
+
+
+
+/* Add in the container queries here  */
+
+
+
+/* Add in the Effects here  */
+
+
+
+/* Add in the Animations here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

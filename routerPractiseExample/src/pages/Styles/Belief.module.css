@@ -1,0 +1,282 @@
+
+/* 
+
+
+
+*/
+
+*, *::before, *::after{
+
+padding: 0; 
+margin: 0; 
+
+box-sizing: border-box;
+
+/* Add in the outline and background color here  */
+
+    
+    
+}
+
+html{
+
+scroll-behavior: smooth;
+
+    
+}
+
+
+:root{
+
+    /* Add in the root variables here  */
+    
+    
+}
+
+
+body{
+
+ padding: 0px; 
+ margin: 0px; 
+ width: 100vw; 
+ min-height: 100vh;
+ position: relative; 
+ 
+ background-color: #444;
+ 
+    
+    
+}
+
+
+/* Add in the main container here  */
+.mainContainer{
+    
+    
+    
+}
+
+
+.contentContainer{
+    
+}
+
+
+
+
+.heroImage{
+
+    width: 100vw; 
+    min-height: 50vh;
+    position: relative; 
+    margin-top: -2.3vh;
+    
+    
+}
+
+.heroTextContainer{
+    
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    
+}
+
+
+.heroText{
+    
+    
+}
+
+
+/* --------PAGE CONTENT --------------- */
+
+.pageContentContainer{
+
+    width: 70vw; 
+    
+    margin: 2rem auto; 
+    
+}
+
+
+.beliefRow{
+
+    width: auto; 
+    
+    margin: 3rem auto; 
+    
+}
+
+
+
+
+.beliefTitleContainer{
+    
+    min-height: 4rem; 
+    
+}
+
+
+.beliefTitle{
+    
+    
+}
+
+
+.beliefTextContainer{
+        
+    
+}
+
+
+.beliefText{
+    
+    
+}
+
+
+
+.footerContainer{
+
+    
+    width: 100vw; 
+    background-color: #1e1c1c; 
+        
+}
+
+
+/* Add in the media queries here  */
+
+@media(max-width: 780px){
+    
+    .heroImage{
+        
+        
+        margin-top: -3vh; 
+        
+    }
+    
+}
+
+
+@media(max-width: 600px){
+    
+    .heroImage{
+        
+        margin-top: -7.9vh; 
+        
+        
+        
+    }
+    
+}
+
+
+
+@media(max-width: 550px){
+
+    .heroImage{
+        
+        margin-top: -8.6vh; 
+        
+    }
+
+}
+
+
+/* Add in the container queries here  */
+
+
+
+/* Add in the Effects here  */
+
+
+
+
+/* Add in the Animations here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

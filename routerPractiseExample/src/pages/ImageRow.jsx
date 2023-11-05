@@ -11,11 +11,13 @@ function ImageRow() {
       {/* Image Row  */}
         <div className={ImageRowCSS.imageOne}>
         
+        
         <div className={ImageRowCSS.paragraphContainer}>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, earum?</p>
         </div>
         
         </div>
+        
         {/* Add in the First text section here  */}
         <div className={ImageRowCSS.imageTwo}>
         <div className={ImageRowCSS.paragraphContainer}>
@@ -23,19 +25,14 @@ function ImageRow() {
         </div>
           
           
+          
+          
         </div>
         {/* Add in the second text section here  */}
         </div>
         
-        {/* <div className={ImageRowCSS.textContainer}>
         
-        <div className={ImageRowCSS.paragraphContainer}>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, earum?</p>
-        </div>
-        <div className={ImageRowCSS.paragraphContainer}>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, odio?</p>
-        </div>
-        </div> */}
+        
     </div>
   );
 }

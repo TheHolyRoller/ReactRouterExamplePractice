@@ -1,0 +1,302 @@
+
+
+/*  */
+
+*, *::before, *::after{
+    
+
+padding: 0; 
+margin: 0; 
+
+box-sizing: border-box; 
+
+/* Add in the outline and background color here  */
+    
+}
+
+
+html{
+
+    
+scroll-behavior: smooth;
+
+    
+}
+
+:root{
+
+/* Add in the root variables here  */
+    
+    
+}
+
+
+body{
+
+padding: 0px; 
+margin: 0px; 
+width: 100vw; 
+min-height: 100vh;
+
+position: relative; 
+
+background-color: #444; 
+
+/* Add in the font family here  */
+    
+    
+}
+
+/* Add in the main container here  */
+.mainContainer{
+
+    width: 100vw; 
+    min-height: 100vh; 
+    position: relative;
+    
+    display: grid;
+    place-content: center;
+    margin: 3.5rem auto; 
+
+}
+
+
+.contentContainer{
+
+    /* Add in the dimensions for the content  */
+
+}
+
+
+.heroContainer{
+    
+    
+    
+}
+
+
+.heroImage{
+    
+    margin-top: -13.4vh; 
+    width: 100vw; 
+    position: relative; 
+    
+
+}
+
+
+
+.heroTextContainer{
+
+    
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, 90%);
+    z-index: 20;    
+    
+}
+
+
+.heroText{
+
+    
+    font-size: 2.2rem;
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+.paragraphContainer{
+    
+    width: auto; 
+    margin: 0 auto; 
+    display: grid;  
+    place-content: center;
+    min-height: 20vh;
+        
+}
+
+
+.giveParagraph{
+
+    
+    
+}
+
+
+
+.contactFormContainer{
+
+    
+}
+
+
+
+.footerContainer{
+
+    
+}
+
+
+@media(max-width: 780px){
+    
+    .heroImage{
+        
+        
+        margin-top: -3vh; 
+        
+    }
+    
+}
+
+
+@media(max-width: 600px){
+    
+    .heroImage{
+        
+        margin-top: -8.2vh; 
+        
+        
+        
+    }
+    
+}
+
+
+@media(max-width: 550px){
+
+    .heroImage{
+        
+        
+        margin-top: -9vh; 
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add in the media Queries here  */
+
+
+
+/* Add in the container queries here  */
+
+
+/* Add in the Effects here  */
+
+
+
+/* Add in the Animations here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

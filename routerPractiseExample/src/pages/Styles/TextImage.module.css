@@ -11,7 +11,6 @@
 }
 
 
-
 body{
 
 width: 100vw; 
@@ -63,13 +62,21 @@ html{
     display: grid;  
     grid-template-columns: 1fr 1fr; 
     
-    /* Clamp the width here  */
-    /* width: 62vw;  */
-    width: clamp(12rem, 72vw + 1rem, 99rem); 
+
+    width: clamp(12rem, 62vw + 1rem, 99rem); 
     
     margin: 0 auto; 
     
     background-color: blue; 
+    
+}
+
+.textSection{
+
+    
+    
+    margin-top: 3rem; 
+    
     
 }
 
@@ -85,10 +92,9 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
     
-      min-height: 62vh;
-      
+    min-height: 49vh;
 
-      width: clamp(12rem, 35vw + 1rem, 33rem); 
+      width: clamp(23.5rem, 28vw + 1rem, 33rem); 
       
               
     margin-left: 6%; 
@@ -101,6 +107,8 @@ html{
 .header{
 
     margin-bottom: 2rem; 
+    font-size: 1.5rem; 
+    
     
 }
 
@@ -108,10 +116,24 @@ html{
 
 .buttonContainer{
 
-    width: 100%; 
     
-    margin-top: 1rem; 
+    
+}
+
+.button{
+    
+    width: 9rem; 
+    background-color: black; 
+    height: 3rem; 
+    display: grid;
+    place-content: center;
+    border-radius: 5%; 
+    color: #b5b7c2; 
+    margin-top: 2rem; 
     margin-left: 1rem; 
+    
+    
+    
     
 }
 
@@ -178,6 +200,7 @@ html{
     
         width: clamp(12rem, 70vw + 1rem, 99rem); 
         margin: 0 auto; 
+        
         
         
         
